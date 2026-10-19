@@ -2,6 +2,10 @@
 public struct DeviceDefinition: Hashable, Sendable {
     public let name: String
     public let identifiers: [String]
+    /// First official announcement of this model
+    public let announcementDate: DeviceDate?
+    /// First consumer availability in any market, or officially scheduled launch, excluding preorders
+    public let releaseDate: DeviceDate?
     /// Regulatory A-model numbers for this model, distinct from hardware identifiers
     public let modelNumbers: [String]
     /// nil means the SIM configuration has not been catalogued
@@ -25,6 +29,8 @@ public struct DeviceDefinition: Hashable, Sendable {
     public init(
         name: String,
         identifiers: [String],
+        announcementDate: DeviceDate? = nil,
+        releaseDate: DeviceDate? = nil,
         cpu: CPU? = nil,
         modelNumbers: [String] = [],
         capabilities: Set<Capability> = [],
@@ -48,6 +54,8 @@ public struct DeviceDefinition: Hashable, Sendable {
         self.eSIMOnlyModelNumbers = eSIMOnlyModelNumbers
         self.batteryCapacityOverrides = batteryCapacityOverrides
         self.name = name
+        self.announcementDate = announcementDate
+        self.releaseDate = releaseDate
         self.identifiers = identifiers
         self.capabilities = capabilities
         self.dockConnector = dockConnector

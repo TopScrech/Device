@@ -24,6 +24,10 @@ public struct Device: Hashable, Sendable {
         }
     }
 
+    public var announcementDate: DeviceDate? { definition?.announcementDate }
+
+    public var releaseDate: DeviceDate? { definition?.releaseDate }
+
     public var waterResistance: String? { definition?.waterResistance }
 
     public var waterResistanceDescription: String? { definition?.waterResistanceDescription }

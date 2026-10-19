@@ -141,3 +141,19 @@ Models absent from those mappings, including iPhone Duo, remain unmapped — sim
 Values were migrated unchanged from Device Specs, preserving units, fractional precision and the Watch Series 3 GPS/cellular annotation — missing values and old `"-"` placeholders return `nil`
 
 This migration is not an independent accuracy audit, and voltage is not calculated from capacity or energy
+
+## Announcement and release dates
+
+`Device.current.announcementDate` and `Device.current.releaseDate` return optional `DeviceDate` values with Gregorian `year`, `month` and `day` components, without a time zone or time of day
+
+- `announcementDate` is the first official announcement, including an initial preview before a later pricing event
+- `releaseDate` is the earliest documented consumer availability in any market, excluding preorders; an officially scheduled future launch may also be recorded and does not imply the device is already available
+- Dates describe the model family, not each regulatory A-number, later regional rollout, storage option, color or band collection
+- Unknown exact dates remain `nil`, even when an announcement or a week/month of availability is known
+
+The date audit checked all 150 catalogue definitions against Apple and a second source on 2026-10-19
+All have announcement dates; exact release dates remain unknown for iPad mini 4 and iPod touch (7th generation), rather than reusing their order dates
+See [iPhone evidence](Documentation/iPhoneDates.md), [iPad evidence](Documentation/iPadDates.md), [Apple Watch evidence](Documentation/AppleWatchDates.md) and [iPod touch, Apple TV and HomePod evidence](Documentation/OtherDeviceDates.md) for per-model dates, source links and exceptions
+
+`DeviceDate` validates Gregorian components at initialization and supports chronological comparison
+When displaying it with Foundation, use the same explicit Gregorian calendar and time zone for both conversion and formatting so the displayed day cannot shift
