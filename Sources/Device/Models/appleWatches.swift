@@ -6,6 +6,8 @@ extension Device {
             cpu: .s1,
             modelNumbers: ["A1553"],
             dockConnector: .unknown,
+            waterResistance: "IPX7 (IEC 60529)",
+            waterResistanceDescription: "Splash and water resistant",
             bluetoothVersion: "4.0",
             batteryCapacity: .init(milliampHours: 205, wattHours: 0.78)
         ),
@@ -15,6 +17,8 @@ extension Device {
             cpu: .s1,
             modelNumbers: ["A1554"],
             dockConnector: .unknown,
+            waterResistance: "IPX7 (IEC 60529)",
+            waterResistanceDescription: "Splash and water resistant",
             bluetoothVersion: "4.0",
             batteryCapacity: .init(milliampHours: 246, wattHours: 0.93)
         ),
@@ -24,6 +28,8 @@ extension Device {
             cpu: .s1P,
             modelNumbers: ["A1802"],
             dockConnector: .unknown,
+            waterResistance: "IPX7 (IEC 60529)",
+            waterResistanceDescription: "Splash and water resistant",
             bluetoothVersion: "4.0",
             batteryCapacity: .init(milliampHours: 205, wattHours: 0.78)
         ),
@@ -33,6 +39,8 @@ extension Device {
             cpu: .s1P,
             modelNumbers: ["A1803"],
             dockConnector: .unknown,
+            waterResistance: "IPX7 (IEC 60529)",
+            waterResistanceDescription: "Splash and water resistant",
             bluetoothVersion: "4.0",
             batteryCapacity: .init(milliampHours: 246, wattHours: 0.93)
         ),
@@ -42,6 +50,8 @@ extension Device {
             cpu: .s2,
             modelNumbers: ["A1757", "A1816"],
             dockConnector: .unknown,
+            waterResistance: "ISO 22810:2010",
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "4.0",
             batteryCapacity: .init(milliampHours: 273, wattHours: 1.03)
         ),
@@ -51,6 +61,8 @@ extension Device {
             cpu: .s2,
             modelNumbers: ["A1758", "A1817"],
             dockConnector: .unknown,
+            waterResistance: "ISO 22810:2010",
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "4.0",
             batteryCapacity: .init(milliampHours: 334, wattHours: 1.27)
         ),
@@ -60,6 +72,8 @@ extension Device {
             cpu: .s3,
             modelNumbers: ["A1858", "A1860", "A1889", "A1890"],
             dockConnector: .unknown,
+            waterResistance: "ISO 22810:2010",
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "4.2",
             batteryCapacity: .init(milliampHours: 262, wattHours: 1),
             batteryCapacityOverrides: [
@@ -74,6 +88,8 @@ extension Device {
             cpu: .s3,
             modelNumbers: ["A1859", "A1861", "A1891", "A1892"],
             dockConnector: .unknown,
+            waterResistance: "ISO 22810:2010",
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "4.2",
             batteryCapacity: .init(milliampHours: 342, wattHours: 1.31),
             batteryCapacityOverrides: [
@@ -88,6 +104,8 @@ extension Device {
             cpu: .s4,
             modelNumbers: ["A1975", "A1977", "A2007"],
             dockConnector: .unknown,
+            waterResistance: "ISO 22810:2010",
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 224.9, wattHours: 0.858)
         ),
@@ -97,6 +115,8 @@ extension Device {
             cpu: .s4,
             modelNumbers: ["A1976", "A1978", "A2008"],
             dockConnector: .unknown,
+            waterResistance: "ISO 22810:2010",
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 291.8, wattHours: 1.113)
         ),
@@ -106,6 +126,8 @@ extension Device {
             cpu: .s5,
             modelNumbers: ["A2092", "A2094", "A2156"],
             dockConnector: .unknown,
+            waterResistance: "ISO 22810:2010",
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 245, wattHours: 0.944)
         ),
@@ -115,6 +137,8 @@ extension Device {
             cpu: .s5,
             modelNumbers: ["A2093", "A2095", "A2157"],
             dockConnector: .unknown,
+            waterResistance: "ISO 22810:2010",
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 296, wattHours: 1.129)
         ),
@@ -124,6 +148,8 @@ extension Device {
             cpu: .s6,
             modelNumbers: ["A2291", "A2293", "A2375"],
             dockConnector: .unknown,
+            waterResistance: "ISO 22810:2010",
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 265.9, wattHours: 1.024)
         ),
@@ -133,6 +159,8 @@ extension Device {
             cpu: .s6,
             modelNumbers: ["A2292", "A2294", "A2376"],
             dockConnector: .unknown,
+            waterResistance: "ISO 22810:2010",
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 303.8, wattHours: 1.17)
         ),
@@ -142,6 +170,8 @@ extension Device {
             cpu: .s5,
             modelNumbers: ["A2351", "A2353", "A2355"],
             dockConnector: .unknown,
+            waterResistance: "ISO 22810:2010",
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 254, wattHours: 0.944)
         ),
@@ -151,6 +181,8 @@ extension Device {
             cpu: .s5,
             modelNumbers: ["A2352", "A2354", "A2356"],
             dockConnector: .unknown,
+            waterResistance: "ISO 22810:2010",
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 296, wattHours: 1.129)
         ),
@@ -160,6 +192,8 @@ extension Device {
             cpu: .s7,
             modelNumbers: ["A2473", "A2475", "A2476"],
             dockConnector: .unknown,
+            waterResistance: "IP6X",
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 284, wattHours: 1.094)
         ),
@@ -169,6 +203,8 @@ extension Device {
             cpu: .s7,
             modelNumbers: ["A2474", "A2477", "A2478"],
             dockConnector: .unknown,
+            waterResistance: "IP6X",
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 309, wattHours: 1.189)
         ),
@@ -178,6 +214,8 @@ extension Device {
             cpu: .s8,
             modelNumbers: ["A2770", "A2772", "A2773", "A2857"],
             dockConnector: .unknown,
+            waterResistance: "IP6X",
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(milliampHours: 282)
         ),
@@ -187,6 +225,8 @@ extension Device {
             cpu: .s8,
             modelNumbers: ["A2771", "A2774", "A2775", "A2858"],
             dockConnector: .unknown,
+            waterResistance: "IP6X",
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(milliampHours: 308)
         ),
@@ -196,6 +236,8 @@ extension Device {
             cpu: .s8,
             modelNumbers: ["A2722", "A2725", "A2726", "A2855"],
             dockConnector: .unknown,
+            waterResistance: "ISO 22810:2010",
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(wattHours: 0.807),
             batteryCapacityOverrides: [
@@ -210,6 +252,8 @@ extension Device {
             cpu: .s8,
             modelNumbers: ["A2723", "A2724", "A2727", "A2856"],
             dockConnector: .unknown,
+            waterResistance: "ISO 22810:2010",
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(wattHours: 1.13)
         ),
@@ -219,6 +263,8 @@ extension Device {
             cpu: .s8,
             modelNumbers: ["A2622", "A2684", "A2859"],
             dockConnector: .unknown,
+            waterResistance: "IP6X, ISO 22810:2010, EN13319",
+            waterResistanceDescription: "Up to 100m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(milliampHours: 542)
         ),
@@ -228,6 +274,8 @@ extension Device {
             cpu: .s9,
             modelNumbers: ["A2986", "A2987"],
             dockConnector: .unknown,
+            waterResistance: "IP6X, ISO 22810:2010, EN13319",
+            waterResistanceDescription: "Up to 100m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(milliampHours: 564)
         ),
@@ -237,6 +285,8 @@ extension Device {
             cpu: .s10,
             modelNumbers: ["A3281", "A3282"],
             dockConnector: .unknown,
+            waterResistance: "IP6X, ISO 22810:2010, EN13319",
+            waterResistanceDescription: "Up to 100m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(wattHours: 2.313)
         ),
@@ -246,6 +296,8 @@ extension Device {
             cpu: .s11,
             modelNumbers: ["A3579", "A3580"],
             dockConnector: .unknown,
+            waterResistance: "IP6X, ISO 22810:2010, EN13319",
+            waterResistanceDescription: "Up to 100m deep",
             bluetoothVersion: "5.3"
         ),
         .init(
@@ -254,6 +306,8 @@ extension Device {
             cpu: .s9,
             modelNumbers: ["A2978", "A2982", "A2983"],
             dockConnector: .unknown,
+            waterResistance: "IP6X",
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(milliampHours: 282)
         ),
@@ -263,6 +317,8 @@ extension Device {
             cpu: .s9,
             modelNumbers: ["A2980", "A2984", "A2985"],
             dockConnector: .unknown,
+            waterResistance: "IP6X",
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(milliampHours: 308)
         ),
@@ -272,6 +328,8 @@ extension Device {
             cpu: .s10,
             modelNumbers: ["A2997", "A2998", "A3001", "A3002"],
             dockConnector: .unknown,
+            waterResistance: "IP6X",
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(milliampHours: 327)
         ),
@@ -281,6 +339,8 @@ extension Device {
             cpu: .s10,
             modelNumbers: ["A2999", "A3000", "A3003", "A3206"],
             dockConnector: .unknown,
+            waterResistance: "IP6X",
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(milliampHours: 327)
         ),
@@ -290,6 +350,8 @@ extension Device {
             cpu: .s10,
             modelNumbers: ["A3331", "A3335", "A3450", "A3452"],
             dockConnector: .unknown,
+            waterResistance: "IP6X",
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(wattHours: 1.245)
         ),
@@ -299,6 +361,8 @@ extension Device {
             cpu: .s10,
             modelNumbers: ["A3333", "A3337", "A3451", "A3453"],
             dockConnector: .unknown,
+            waterResistance: "IP6X",
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(wattHours: 1.403)
         ),
@@ -308,6 +372,7 @@ extension Device {
             cpu: .s11,
             modelNumbers: ["A3581", "A3582", "A3583", "A3586"],
             dockConnector: .unknown,
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "5.3"
         ),
         .init(
@@ -316,6 +381,7 @@ extension Device {
             cpu: .s11,
             modelNumbers: ["A3584", "A3585", "A3587", "A3588"],
             dockConnector: .unknown,
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "5.3"
         ),
         .init(
@@ -324,6 +390,8 @@ extension Device {
             cpu: .s10,
             modelNumbers: ["A3324", "A3325", "A3391", "A3392"],
             dockConnector: .unknown,
+            waterResistance: "ISO 22810:2010",
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(wattHours: 1.017)
         ),
@@ -333,6 +401,8 @@ extension Device {
             cpu: .s10,
             modelNumbers: ["A3326", "A3327", "A3328", "A3329"],
             dockConnector: .unknown,
+            waterResistance: "ISO 22810:2010",
+            waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(wattHours: 1.276)
         )

@@ -6,6 +6,8 @@ extension Device {
             cpu: .a8,
             modelNumbers: ["A1625"],
             dockConnector: .unknown,
+            waterResistance: "None",
+            waterResistanceDescription: "None",
             bluetoothVersion: "5.0"
         ),
         .init(
@@ -14,6 +16,8 @@ extension Device {
             cpu: .a10XFusion,
             modelNumbers: ["A1842"],
             dockConnector: .unknown,
+            waterResistance: "None",
+            waterResistanceDescription: "None",
             bluetoothVersion: "4.0"
         ),
         .init(
@@ -22,6 +26,8 @@ extension Device {
             cpu: .a12Bionic,
             modelNumbers: ["A2169"],
             dockConnector: .unknown,
+            waterResistance: "None",
+            waterResistanceDescription: "None",
             bluetoothVersion: "5.0"
         ),
         .init(
@@ -30,6 +36,8 @@ extension Device {
             cpu: .a15Bionic,
             modelNumbers: ["A2737", "A2843"],
             dockConnector: .unknown,
+            waterResistance: "None",
+            waterResistanceDescription: "None",
             bluetoothVersion: "5.0"
         )
     ]

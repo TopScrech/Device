@@ -34,6 +34,8 @@ extension Device {
             cpu: .a5,
             modelNumbers: ["A1421", "A1509"],
             dockConnector: .lightning,
+            waterResistance: "None",
+            waterResistanceDescription: "None",
             bluetoothVersion: "4.0",
             batteryCapacity: .init(milliampHours: 1030, wattHours: 3.8)
         ),
@@ -43,6 +45,8 @@ extension Device {
             cpu: .a8,
             modelNumbers: ["A1574"],
             dockConnector: .lightning,
+            waterResistance: "None",
+            waterResistanceDescription: "None",
             bluetoothVersion: "4.1",
             batteryCapacity: .init(milliampHours: 1043, wattHours: 3.99)
         ),
@@ -52,6 +56,8 @@ extension Device {
             cpu: .a10Fusion,
             modelNumbers: ["A2178"],
             dockConnector: .lightning,
+            waterResistance: "None",
+            waterResistanceDescription: "None",
             bluetoothVersion: "4.1",
             batteryCapacity: .init(milliampHours: 1043, wattHours: 3.99)
         )

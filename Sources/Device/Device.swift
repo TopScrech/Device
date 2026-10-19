@@ -24,6 +24,10 @@ public struct Device: Hashable, Sendable {
         }
     }
 
+    public var waterResistance: String? { definition?.waterResistance }
+
+    public var waterResistanceDescription: String? { definition?.waterResistanceDescription }
+
     public var cpu: CPU? { definition?.cpu }
 
     public var name: String? {

@@ -120,3 +120,16 @@ Base M-series chips expose their base Neural Engine and clock values without the
 The CPU enum includes Mac and accessory chips, but this does not add Mac or AirPods device definitions
 
 CPU identities were adapted from [kudit/Device](https://github.com/kudit/Device) and display names from [DeviceKit](https://github.com/devicekit/DeviceKit), with changes to naming, optional unknown values and platform-independent availability — upstream license notices are in `Licenses`
+
+## Water resistance
+
+```swift
+Device.current.waterResistance // e.g. "IP68 (IEC 60529)"
+Device.current.waterResistanceDescription // e.g. "Up to 30 minutes and 6m deep"
+```
+
+Both properties are optional catalogue strings, also available on `DeviceDefinition` — `"None"` means the existing mapping explicitly lists no rating, while `nil` means it has not been mapped
+
+Values and wording were migrated unchanged from Device Specs, including the existing iPhone 16e inconsistency (IP68 rating with a `"None"` description) — this migration is not an independent accuracy audit
+
+Models absent from those mappings, including iPhone Duo, remain unmapped — simulator lookup uses its simulated model through `Device.current`, and A-model lookup shares the same specifications

@@ -6,6 +6,8 @@ extension Device {
             cpu: .a8,
             modelNumbers: ["A1639"],
             dockConnector: .unknown,
+            waterResistance: "None",
+            waterResistanceDescription: "None",
             bluetoothVersion: "5.0"
         ),
         .init(

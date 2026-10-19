@@ -15,6 +15,10 @@ public struct DeviceDefinition: Hashable, Sendable {
     public let bluetoothVersion: String?
     public let cpu: CPU?
     public let dockConnector: DockConnector
+    /// Catalogue rating text, nil when unmapped and "None" when explicitly unrated
+    public let waterResistance: String?
+    /// Catalogue description of water resistance, not a live hardware measurement
+    public let waterResistanceDescription: String?
 
     public init(
         name: String,
@@ -23,12 +27,16 @@ public struct DeviceDefinition: Hashable, Sendable {
         modelNumbers: [String] = [],
         capabilities: Set<Capability> = [],
         dockConnector: DockConnector,
+        waterResistance: String? = nil,
+        waterResistanceDescription: String? = nil,
         bluetoothVersion: String? = nil,
         batteryCapacity: BatteryCapacity? = nil,
         eSIMOnlyBatteryCapacity: BatteryCapacity? = nil,
         eSIMOnlyModelNumbers: Set<String>? = nil,
         batteryCapacityOverrides: [String: BatteryCapacity] = [:]
     ) {
+        self.waterResistance = waterResistance
+        self.waterResistanceDescription = waterResistanceDescription
         self.cpu = cpu
         self.modelNumbers = modelNumbers
         self.batteryCapacity = batteryCapacity

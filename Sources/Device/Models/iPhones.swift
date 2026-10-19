@@ -31,6 +31,8 @@ extension Device {
             cpu: .a4,
             modelNumbers: ["A1332", "A1349"],
             dockConnector: .thirtyPin,
+            waterResistance: "None",
+            waterResistanceDescription: "None",
             bluetoothVersion: "2.1 + EDR",
             batteryCapacity: .init(milliampHours: 1420, wattHours: 0.525),
             eSIMOnlyModelNumbers: []
@@ -41,6 +43,8 @@ extension Device {
             cpu: .a5,
             modelNumbers: ["A1387", "A1431"],
             dockConnector: .thirtyPin,
+            waterResistance: "None",
+            waterResistanceDescription: "None",
             bluetoothVersion: "4.0",
             batteryCapacity: .init(milliampHours: 1432, wattHours: 5.291),
             eSIMOnlyModelNumbers: []
@@ -51,6 +55,8 @@ extension Device {
             cpu: .a6,
             modelNumbers: ["A1428", "A1429", "A1442"],
             dockConnector: .lightning,
+            waterResistance: "None",
+            waterResistanceDescription: "None",
             bluetoothVersion: "4.0",
             batteryCapacity: .init(milliampHours: 1440, wattHours: 5.45),
             eSIMOnlyModelNumbers: []
@@ -61,6 +67,8 @@ extension Device {
             cpu: .a6,
             modelNumbers: ["A1456", "A1507", "A1516", "A1526", "A1529", "A1532"],
             dockConnector: .lightning,
+            waterResistance: "None",
+            waterResistanceDescription: "None",
             bluetoothVersion: "4.0",
             batteryCapacity: .init(milliampHours: 1508, wattHours: 5.73),
             eSIMOnlyModelNumbers: []
@@ -71,6 +79,8 @@ extension Device {
             cpu: .a7,
             modelNumbers: ["A1453", "A1457", "A1518", "A1528", "A1530", "A1533"],
             dockConnector: .lightning,
+            waterResistance: "None",
+            waterResistanceDescription: "None",
             bluetoothVersion: "4.0",
             batteryCapacity: .init(milliampHours: 1508, wattHours: 5.92),
             eSIMOnlyModelNumbers: []
@@ -81,6 +91,8 @@ extension Device {
             cpu: .a8,
             modelNumbers: ["A1549", "A1586", "A1589"],
             dockConnector: .lightning,
+            waterResistance: "None",
+            waterResistanceDescription: "None",
             bluetoothVersion: "4.2",
             batteryCapacity: .init(milliampHours: 1809, wattHours: 6.91),
             eSIMOnlyModelNumbers: []
@@ -91,6 +103,8 @@ extension Device {
             cpu: .a8,
             modelNumbers: ["A1522", "A1524", "A1593"],
             dockConnector: .lightning,
+            waterResistance: "None",
+            waterResistanceDescription: "None",
             bluetoothVersion: "4.2",
             batteryCapacity: .init(milliampHours: 2906, wattHours: 10.45),
             eSIMOnlyModelNumbers: []
@@ -101,6 +115,8 @@ extension Device {
             cpu: .a9,
             modelNumbers: ["A1633", "A1688", "A1691", "A1700"],
             dockConnector: .lightning,
+            waterResistance: "None",
+            waterResistanceDescription: "None",
             bluetoothVersion: "4.2",
             batteryCapacity: .init(milliampHours: 1715, wattHours: 6.55),
             eSIMOnlyModelNumbers: []
@@ -111,6 +127,8 @@ extension Device {
             cpu: .a9,
             modelNumbers: ["A1634", "A1687", "A1690", "A1699"],
             dockConnector: .lightning,
+            waterResistance: "None",
+            waterResistanceDescription: "None",
             bluetoothVersion: "4.2",
             batteryCapacity: .init(milliampHours: 2750, wattHours: 10.45),
             eSIMOnlyModelNumbers: []
@@ -121,6 +139,8 @@ extension Device {
             cpu: .a9,
             modelNumbers: ["A1662", "A1723", "A1724"],
             dockConnector: .lightning,
+            waterResistance: "None",
+            waterResistanceDescription: "None",
             bluetoothVersion: "4.2",
             batteryCapacity: .init(milliampHours: 1624, wattHours: 6.21),
             eSIMOnlyModelNumbers: []
@@ -131,6 +151,8 @@ extension Device {
             cpu: .a10Fusion,
             modelNumbers: ["A1660", "A1778", "A1779", "A1780"],
             dockConnector: .lightning,
+            waterResistance: "IP67 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 1 meter deep",
             bluetoothVersion: "4.2",
             batteryCapacity: .init(milliampHours: 1960, wattHours: 7.45),
             eSIMOnlyModelNumbers: []
@@ -141,6 +163,8 @@ extension Device {
             cpu: .a10Fusion,
             modelNumbers: ["A1661", "A1784", "A1785", "A1786"],
             dockConnector: .lightning,
+            waterResistance: "IP67 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 1 meter deep",
             bluetoothVersion: "4.2",
             batteryCapacity: .init(milliampHours: 2900, wattHours: 11.1),
             eSIMOnlyModelNumbers: []
@@ -151,6 +175,8 @@ extension Device {
             cpu: .a11Bionic,
             modelNumbers: ["A1863", "A1905", "A1906", "A1907"],
             dockConnector: .lightning,
+            waterResistance: "IP67 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 1 meter deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 1821, wattHours: 6.96),
             eSIMOnlyModelNumbers: []
@@ -161,6 +187,8 @@ extension Device {
             cpu: .a11Bionic,
             modelNumbers: ["A1864", "A1897", "A1898", "A1899"],
             dockConnector: .lightning,
+            waterResistance: "IP67 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 1 meter deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 2691, wattHours: 10.28),
             eSIMOnlyModelNumbers: []
@@ -171,6 +199,8 @@ extension Device {
             cpu: .a11Bionic,
             modelNumbers: ["A1865", "A1901", "A1902", "A1903"],
             dockConnector: .lightning,
+            waterResistance: "IP67 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 1 meter deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 2716, wattHours: 10.35),
             eSIMOnlyModelNumbers: []
@@ -181,6 +211,8 @@ extension Device {
             cpu: .a12Bionic,
             modelNumbers: ["A1920", "A2097", "A2098", "A2099", "A2100"],
             dockConnector: .lightning,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 2 meters deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 2658, wattHours: 10.13),
             eSIMOnlyModelNumbers: []
@@ -191,6 +223,8 @@ extension Device {
             cpu: .a12Bionic,
             modelNumbers: ["A1921", "A2101", "A2102", "A2103", "A2104"],
             dockConnector: .lightning,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 2 meters deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 3174, wattHours: 12.08),
             eSIMOnlyModelNumbers: []
@@ -201,6 +235,8 @@ extension Device {
             cpu: .a12Bionic,
             modelNumbers: ["A1984", "A2105", "A2106", "A2107", "A2108"],
             dockConnector: .lightning,
+            waterResistance: "IP67 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 1 meter deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 2942, wattHours: 11.16),
             eSIMOnlyModelNumbers: []
@@ -211,6 +247,8 @@ extension Device {
             cpu: .a13Bionic,
             modelNumbers: ["A2111", "A2221", "A2222", "A2223"],
             dockConnector: .lightning,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 2 meters deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 3110, wattHours: 11.91),
             eSIMOnlyModelNumbers: []
@@ -221,6 +259,8 @@ extension Device {
             cpu: .a13Bionic,
             modelNumbers: ["A2160", "A2215", "A2216", "A2217"],
             dockConnector: .lightning,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 4m deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 3046, wattHours: 11.67),
             eSIMOnlyModelNumbers: []
@@ -231,6 +271,8 @@ extension Device {
             cpu: .a13Bionic,
             modelNumbers: ["A2161", "A2218", "A2219", "A2220"],
             dockConnector: .lightning,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 4m deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 3969, wattHours: 15.04),
             eSIMOnlyModelNumbers: []
@@ -241,6 +283,8 @@ extension Device {
             cpu: .a13Bionic,
             modelNumbers: ["A2275", "A2296", "A2297", "A2298"],
             dockConnector: .lightning,
+            waterResistance: "IP67 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 1 meter deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 1821, wattHours: 6.96),
             eSIMOnlyModelNumbers: []
@@ -252,6 +296,8 @@ extension Device {
             modelNumbers: ["A2172", "A2402", "A2403", "A2404", "A2405"],
             capabilities: [.magSafe],
             dockConnector: .lightning,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 2815, wattHours: 10.78),
             eSIMOnlyModelNumbers: []
@@ -263,6 +309,8 @@ extension Device {
             modelNumbers: ["A2176", "A2398", "A2399", "A2400", "A2401"],
             capabilities: [.magSafe],
             dockConnector: .lightning,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 2227, wattHours: 8.57),
             eSIMOnlyModelNumbers: []
@@ -274,6 +322,8 @@ extension Device {
             modelNumbers: ["A2341", "A2406", "A2407", "A2408", "A2409"],
             capabilities: [.magSafe],
             dockConnector: .lightning,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 2815, wattHours: 10.78),
             eSIMOnlyModelNumbers: []
@@ -285,6 +335,8 @@ extension Device {
             modelNumbers: ["A2342", "A2410", "A2411", "A2412", "A2413"],
             capabilities: [.magSafe],
             dockConnector: .lightning,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 3687, wattHours: 14.13),
             eSIMOnlyModelNumbers: []
@@ -296,6 +348,8 @@ extension Device {
             modelNumbers: ["A2482", "A2631", "A2633", "A2634", "A2635"],
             capabilities: [.magSafe],
             dockConnector: .lightning,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 3227, wattHours: 12.41),
             eSIMOnlyModelNumbers: []
@@ -307,6 +361,8 @@ extension Device {
             modelNumbers: ["A2481", "A2626", "A2628", "A2629", "A2630"],
             capabilities: [.magSafe],
             dockConnector: .lightning,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 2406, wattHours: 9.34),
             eSIMOnlyModelNumbers: []
@@ -318,6 +374,8 @@ extension Device {
             modelNumbers: ["A2483", "A2636", "A2638", "A2639", "A2640"],
             capabilities: [.magSafe],
             dockConnector: .lightning,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 3095, wattHours: 11.97),
             eSIMOnlyModelNumbers: []
@@ -329,6 +387,8 @@ extension Device {
             modelNumbers: ["A2484", "A2641", "A2643", "A2644", "A2645"],
             capabilities: [.magSafe],
             dockConnector: .lightning,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 4352, wattHours: 16.75),
             eSIMOnlyModelNumbers: []
@@ -339,6 +399,8 @@ extension Device {
             cpu: .a15Bionic,
             modelNumbers: ["A2595", "A2782", "A2783", "A2784", "A2785"],
             dockConnector: .lightning,
+            waterResistance: "IP67 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 1 meter deep",
             bluetoothVersion: "5.0",
             batteryCapacity: .init(milliampHours: 2018, wattHours: 7.82),
             eSIMOnlyModelNumbers: []
@@ -350,6 +412,8 @@ extension Device {
             modelNumbers: ["A2649", "A2881", "A2882", "A2883", "A2884"],
             capabilities: [.magSafe],
             dockConnector: .lightning,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(milliampHours: 3279, wattHours: 12.68),
             eSIMOnlyModelNumbers: ["A2649"]
@@ -361,6 +425,8 @@ extension Device {
             modelNumbers: ["A2632", "A2885", "A2886", "A2887", "A2888"],
             capabilities: [.magSafe],
             dockConnector: .lightning,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(milliampHours: 4325, wattHours: 16.68),
             eSIMOnlyModelNumbers: ["A2632"]
@@ -372,6 +438,8 @@ extension Device {
             modelNumbers: ["A2650", "A2889", "A2890", "A2891", "A2892"],
             capabilities: [.magSafe],
             dockConnector: .lightning,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(milliampHours: 3200, wattHours: 12.38),
             eSIMOnlyModelNumbers: ["A2650"]
@@ -383,6 +451,8 @@ extension Device {
             modelNumbers: ["A2651", "A2893", "A2894", "A2895", "A2896"],
             capabilities: [.magSafe],
             dockConnector: .lightning,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(milliampHours: 4323, wattHours: 16.68),
             eSIMOnlyModelNumbers: ["A2651"]
@@ -394,6 +464,8 @@ extension Device {
             modelNumbers: ["A2846", "A3089", "A3090", "A3092"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(milliampHours: 3349, wattHours: 12.98),
             eSIMOnlyModelNumbers: ["A2846"]
@@ -405,6 +477,8 @@ extension Device {
             modelNumbers: ["A2847", "A3093", "A3094", "A3096"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(milliampHours: 4383, wattHours: 16.95),
             eSIMOnlyModelNumbers: ["A2847"]
@@ -416,6 +490,8 @@ extension Device {
             modelNumbers: ["A2848", "A3101", "A3102", "A3104"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(milliampHours: 3274, wattHours: 12.7),
             eSIMOnlyModelNumbers: ["A2848"]
@@ -427,6 +503,8 @@ extension Device {
             modelNumbers: ["A2849", "A3105", "A3106", "A3108"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(milliampHours: 4422, wattHours: 17.11),
             eSIMOnlyModelNumbers: ["A2849"]
@@ -438,6 +516,8 @@ extension Device {
             modelNumbers: ["A3081", "A3286", "A3287", "A3288"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(milliampHours: 3561, wattHours: 13.7),
             eSIMOnlyModelNumbers: ["A3081"]
@@ -449,6 +529,8 @@ extension Device {
             modelNumbers: ["A3082", "A3289", "A3290", "A3291"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(milliampHours: 4674, wattHours: 18),
             eSIMOnlyModelNumbers: ["A3082"]
@@ -460,6 +542,8 @@ extension Device {
             modelNumbers: ["A3083", "A3292", "A3293", "A3294"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(milliampHours: 3582, wattHours: 13.8),
             eSIMOnlyModelNumbers: ["A3083"]
@@ -471,6 +555,8 @@ extension Device {
             modelNumbers: ["A3084", "A3295", "A3296", "A3297"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(milliampHours: 4685, wattHours: 18),
             eSIMOnlyModelNumbers: ["A3084"]
@@ -481,6 +567,8 @@ extension Device {
             cpu: .a18,
             modelNumbers: ["A3212", "A3408", "A3409", "A3410"],
             dockConnector: .usbC,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "None",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(milliampHours: 4005),
             eSIMOnlyModelNumbers: ["A3212"]
@@ -492,6 +580,8 @@ extension Device {
             modelNumbers: ["A3258", "A3519", "A3520", "A3521"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "6.0",
             batteryCapacity: .init(milliampHours: 3692),
             eSIMOnlyModelNumbers: ["A3258", "A3519"]
@@ -503,6 +593,8 @@ extension Device {
             modelNumbers: ["A3260", "A3516", "A3517", "A3518"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "6.0",
             batteryCapacity: .init(milliampHours: 3149),
             eSIMOnlyModelNumbers: ["A3260", "A3516", "A3517", "A3518"]
@@ -514,6 +606,8 @@ extension Device {
             modelNumbers: ["A3256", "A3522", "A3523", "A3524"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "6.0",
             batteryCapacity: .init(milliampHours: 3998),
             eSIMOnlyBatteryCapacity: .init(milliampHours: 4252),
@@ -526,6 +620,8 @@ extension Device {
             modelNumbers: ["A3257", "A3525", "A3526", "A3527"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "6.0",
             batteryCapacity: .init(milliampHours: 4832),
             eSIMOnlyBatteryCapacity: .init(milliampHours: 5088),
@@ -538,6 +634,8 @@ extension Device {
             modelNumbers: ["A3575", "A3634", "A3635"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(milliampHours: 4005),
             eSIMOnlyModelNumbers: ["A3575"]
@@ -549,6 +647,8 @@ extension Device {
             modelNumbers: ["A3472", "A3713", "A3714", "A3715"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "6.0",
             batteryCapacity: .init(milliampHours: 4056),
             eSIMOnlyModelNumbers: ["A3472", "A3713"]
@@ -560,6 +660,8 @@ extension Device {
             modelNumbers: ["A3473", "A3716", "A3717", "A3718"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "6.0",
             batteryCapacity: .init(milliampHours: 5391),
             eSIMOnlyModelNumbers: ["A3473", "A3716"]
