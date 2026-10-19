@@ -25,8 +25,11 @@ Each model has its own initializer in `Sources/Device/Models`, with its name, re
 .init(
     name: "iPhone Duo",
     identifiers: ["iPhone19,4"],
+    modelNumbers: ["A3447", "A3719", "A3720", "A3721"],
     capabilities: [.magSafe],
-    dockConnector: .usbC
+    dockConnector: .usbC,
+    batteryCapacity: .init(batteryMilliampHours: [2962, 1921]),
+    eSIMOnlyModelNumbers: ["A3447", "A3719", "A3720", "A3721"]
 )
 ```
 
@@ -43,6 +46,46 @@ The initial capability is `.magSafe`, meaning built-in iPhone magnetic wireless 
 Model capabilities are maintained directly in Swift, informed by [DeviceKit](https://github.com/devicekit/DeviceKit) and [Device](https://github.com/kudit/Device)
 
 Unknown identifiers are preserved and return an empty capability set, so `has` reports known support rather than guessing capabilities for future devices
+
+## A-models and battery capacity
+
+Every model currently in the catalogue has `modelNumbers` containing its regulatory A-identifiers
+
+```swift
+let esimPhone = Device(modelNumber: "A3256")
+esimPhone.batteryCapacity?.milliampHours // 4252
+esimPhone.isESIMOnly // true
+
+let physicalSIMPhone = Device(modelNumber: "A3523")
+physicalSIMPhone.batteryCapacity?.milliampHours // 3998
+
+let phone = Device(identifier: "iPhone18,1")
+phone.batteryCapacity // nil: this identifier covers different battery variants
+phone.withModelNumber("A3256").batteryCapacity?.milliampHours // 4252
+
+let duo = Device(identifier: "iPhone19,4")
+duo.batteryCapacity?.batteryCount // 2
+duo.batteryCapacity?.batteryMilliampHours // [2962, 1921]
+duo.batteryCapacity?.milliampHours // 4883
+```
+
+`BatteryCapacity` keeps mAh and Wh separately as optional numeric values, preserving fractional values and models where only Wh is known
+
+Each definition stores a base `batteryCapacity` and an optional `eSIMOnlyBatteryCapacity` selected using `eSIMOnlyModelNumbers` — GPS/cellular Watch differences use `batteryCapacityOverrides` keyed by A-model
+
+`Device.current.batteryCapacity` returns a value only when the model has a known, unambiguous capacity — supply the A-number with `Device.current.withModelNumber("A3256")` when required
+
+The package cannot automatically read the current iPhone's A-model number through a public iOS API — A-model input must come from the caller, for example from the user reading Settings → General → About
+
+Unknown A-models and A-models belonging to a different device return no definition or capacity — the library does not guess based on locale, active SIM or carrier
+
+Battery values were migrated as supplied from Device Specs, including its existing mAh/Wh values — this migration is not an independent accuracy audit of those values
+
+Duo's eSIM-only configuration and two battery capacities were supplied by the project owner — missing capacity data remains `nil`, including models without a built-in battery
+
+A-model data was cross-referenced from [kudit/Device's model catalogue](https://github.com/kudit/Device/tree/main/Sources/Models) and Apple's model guides for [iPhone](https://support.apple.com/en-us/108044), [iPad](https://support.apple.com/en-us/108043), [Watch](https://support.apple.com/en-us/108056) and [iPod](https://support.apple.com/en-us/103823)
+
+SIM configurations use Apple's iPhone model guide — eSIM-only does not automatically imply a larger battery, and only explicitly mapped higher capacities are selected
 
 ## Validation
 
