@@ -6,7 +6,7 @@ public struct Device: Hashable, Sendable {
         self.identifier = identifier
     }
 
-    public static let all = iPhones + iPads + iPods
+    public static let all = iPhones + iPads + iPods + appleWatches + appleTVs + homePods
 
     public var definition: DeviceDefinition? {
         Self.all.first { $0.identifiers.contains(identifier) }
@@ -24,6 +24,11 @@ public struct Device: Hashable, Sendable {
     /// Unknown models never default to Lightning
     public var dockConnector: DockConnector {
         definition?.dockConnector ?? .unknown
+    }
+
+    /// The model's Bluetooth specification version, or nil when not mapped
+    public var bluetoothVersion: String? {
+        definition?.bluetoothVersion
     }
 
     public func has(_ capability: Capability) -> Bool {
