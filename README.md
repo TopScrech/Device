@@ -133,3 +133,11 @@ Both properties are optional catalogue strings, also available on `DeviceDefinit
 Values and wording were migrated unchanged from Device Specs, including the existing iPhone 16e inconsistency (IP68 rating with a `"None"` description) — this migration is not an independent accuracy audit
 
 Models absent from those mappings, including iPhone Duo, remain unmapped — simulator lookup uses its simulated model through `Device.current`, and A-model lookup shares the same specifications
+
+## Voltage
+
+`Device.current.voltage` returns optional nominal catalogue voltage text, also available on `DeviceDefinition` — this is not a live voltage measurement
+
+Values were migrated unchanged from Device Specs, preserving units, fractional precision and the Watch Series 3 GPS/cellular annotation — missing values and old `"-"` placeholders return `nil`
+
+This migration is not an independent accuracy audit, and voltage is not calculated from capacity or energy

@@ -14,6 +14,8 @@ public struct DeviceDefinition: Hashable, Sendable {
     /// Bluetooth specification version from the model catalogue, not a live connection
     public let bluetoothVersion: String?
     public let cpu: CPU?
+    /// Nominal catalogue voltage text, not a live reading
+    public let voltage: String?
     public let dockConnector: DockConnector
     /// Catalogue rating text, nil when unmapped and "None" when explicitly unrated
     public let waterResistance: String?
@@ -27,6 +29,7 @@ public struct DeviceDefinition: Hashable, Sendable {
         modelNumbers: [String] = [],
         capabilities: Set<Capability> = [],
         dockConnector: DockConnector,
+        voltage: String? = nil,
         waterResistance: String? = nil,
         waterResistanceDescription: String? = nil,
         bluetoothVersion: String? = nil,
@@ -37,6 +40,7 @@ public struct DeviceDefinition: Hashable, Sendable {
     ) {
         self.waterResistance = waterResistance
         self.waterResistanceDescription = waterResistanceDescription
+        self.voltage = voltage
         self.cpu = cpu
         self.modelNumbers = modelNumbers
         self.batteryCapacity = batteryCapacity

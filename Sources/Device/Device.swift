@@ -28,6 +28,9 @@ public struct Device: Hashable, Sendable {
 
     public var waterResistanceDescription: String? { definition?.waterResistanceDescription }
 
+    /// Nominal voltage from the catalogue, nil when not mapped
+    public var voltage: String? { definition?.voltage }
+
     public var cpu: CPU? { definition?.cpu }
 
     public var name: String? {
