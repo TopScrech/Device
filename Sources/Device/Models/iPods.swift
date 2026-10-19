@@ -3,30 +3,35 @@ extension Device {
         .init(
             name: "iPod touch",
             identifiers: ["iPod1,1"],
+            cpu: .s5L8900,
             modelNumbers: ["A1213"],
             dockConnector: .thirtyPin
         ),
         .init(
             name: "iPod touch (2nd generation)",
             identifiers: ["iPod2,1"],
+            cpu: .s5L8720,
             modelNumbers: ["A1288", "A1319"],
             dockConnector: .thirtyPin
         ),
         .init(
             name: "iPod touch (3rd generation)",
             identifiers: ["iPod3,1"],
+            cpu: .s5L8922,
             modelNumbers: ["A1318"],
             dockConnector: .thirtyPin
         ),
         .init(
             name: "iPod touch (4th generation)",
             identifiers: ["iPod4,1"],
+            cpu: .a4,
             modelNumbers: ["A1367"],
             dockConnector: .thirtyPin
         ),
         .init(
             name: "iPod touch (5th generation)",
             identifiers: ["iPod5,1"],
+            cpu: .a5,
             modelNumbers: ["A1421", "A1509"],
             dockConnector: .lightning,
             bluetoothVersion: "4.0",
@@ -35,6 +40,7 @@ extension Device {
         .init(
             name: "iPod touch (6th generation)",
             identifiers: ["iPod7,1"],
+            cpu: .a8,
             modelNumbers: ["A1574"],
             dockConnector: .lightning,
             bluetoothVersion: "4.1",
@@ -43,6 +49,7 @@ extension Device {
         .init(
             name: "iPod touch (7th generation)",
             identifiers: ["iPod9,1"],
+            cpu: .a10Fusion,
             modelNumbers: ["A2178"],
             dockConnector: .lightning,
             bluetoothVersion: "4.1",

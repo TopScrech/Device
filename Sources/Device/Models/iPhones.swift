@@ -4,6 +4,7 @@ extension Device {
         .init(
             name: "iPhone",
             identifiers: ["iPhone1,1"],
+            cpu: .s5L8900,
             modelNumbers: ["A1203"],
             dockConnector: .thirtyPin,
             eSIMOnlyModelNumbers: []
@@ -11,6 +12,7 @@ extension Device {
         .init(
             name: "iPhone 3G",
             identifiers: ["iPhone1,2"],
+            cpu: .s5L8900,
             modelNumbers: ["A1241", "A1324"],
             dockConnector: .thirtyPin,
             eSIMOnlyModelNumbers: []
@@ -18,6 +20,7 @@ extension Device {
         .init(
             name: "iPhone 3GS",
             identifiers: ["iPhone2,1"],
+            cpu: .s5L8920,
             modelNumbers: ["A1303", "A1325"],
             dockConnector: .thirtyPin,
             eSIMOnlyModelNumbers: []
@@ -25,6 +28,7 @@ extension Device {
         .init(
             name: "iPhone 4",
             identifiers: ["iPhone3,1", "iPhone3,2", "iPhone3,3"],
+            cpu: .a4,
             modelNumbers: ["A1332", "A1349"],
             dockConnector: .thirtyPin,
             bluetoothVersion: "2.1 + EDR",
@@ -34,6 +38,7 @@ extension Device {
         .init(
             name: "iPhone 4s",
             identifiers: ["iPhone4,1"],
+            cpu: .a5,
             modelNumbers: ["A1387", "A1431"],
             dockConnector: .thirtyPin,
             bluetoothVersion: "4.0",
@@ -43,6 +48,7 @@ extension Device {
         .init(
             name: "iPhone 5",
             identifiers: ["iPhone5,1", "iPhone5,2"],
+            cpu: .a6,
             modelNumbers: ["A1428", "A1429", "A1442"],
             dockConnector: .lightning,
             bluetoothVersion: "4.0",
@@ -52,6 +58,7 @@ extension Device {
         .init(
             name: "iPhone 5c",
             identifiers: ["iPhone5,3", "iPhone5,4"],
+            cpu: .a6,
             modelNumbers: ["A1456", "A1507", "A1516", "A1526", "A1529", "A1532"],
             dockConnector: .lightning,
             bluetoothVersion: "4.0",
@@ -61,6 +68,7 @@ extension Device {
         .init(
             name: "iPhone 5s",
             identifiers: ["iPhone6,1", "iPhone6,2"],
+            cpu: .a7,
             modelNumbers: ["A1453", "A1457", "A1518", "A1528", "A1530", "A1533"],
             dockConnector: .lightning,
             bluetoothVersion: "4.0",
@@ -70,6 +78,7 @@ extension Device {
         .init(
             name: "iPhone 6",
             identifiers: ["iPhone7,2"],
+            cpu: .a8,
             modelNumbers: ["A1549", "A1586", "A1589"],
             dockConnector: .lightning,
             bluetoothVersion: "4.2",
@@ -79,6 +88,7 @@ extension Device {
         .init(
             name: "iPhone 6 Plus",
             identifiers: ["iPhone7,1"],
+            cpu: .a8,
             modelNumbers: ["A1522", "A1524", "A1593"],
             dockConnector: .lightning,
             bluetoothVersion: "4.2",
@@ -88,6 +98,7 @@ extension Device {
         .init(
             name: "iPhone 6s",
             identifiers: ["iPhone8,1"],
+            cpu: .a9,
             modelNumbers: ["A1633", "A1688", "A1691", "A1700"],
             dockConnector: .lightning,
             bluetoothVersion: "4.2",
@@ -97,6 +108,7 @@ extension Device {
         .init(
             name: "iPhone 6s Plus",
             identifiers: ["iPhone8,2"],
+            cpu: .a9,
             modelNumbers: ["A1634", "A1687", "A1690", "A1699"],
             dockConnector: .lightning,
             bluetoothVersion: "4.2",
@@ -106,6 +118,7 @@ extension Device {
         .init(
             name: "iPhone SE (1st generation)",
             identifiers: ["iPhone8,4"],
+            cpu: .a9,
             modelNumbers: ["A1662", "A1723", "A1724"],
             dockConnector: .lightning,
             bluetoothVersion: "4.2",
@@ -115,6 +128,7 @@ extension Device {
         .init(
             name: "iPhone 7",
             identifiers: ["iPhone9,1", "iPhone9,3"],
+            cpu: .a10Fusion,
             modelNumbers: ["A1660", "A1778", "A1779", "A1780"],
             dockConnector: .lightning,
             bluetoothVersion: "4.2",
@@ -124,6 +138,7 @@ extension Device {
         .init(
             name: "iPhone 7 Plus",
             identifiers: ["iPhone9,2", "iPhone9,4"],
+            cpu: .a10Fusion,
             modelNumbers: ["A1661", "A1784", "A1785", "A1786"],
             dockConnector: .lightning,
             bluetoothVersion: "4.2",
@@ -133,6 +148,7 @@ extension Device {
         .init(
             name: "iPhone 8",
             identifiers: ["iPhone10,1", "iPhone10,4"],
+            cpu: .a11Bionic,
             modelNumbers: ["A1863", "A1905", "A1906", "A1907"],
             dockConnector: .lightning,
             bluetoothVersion: "5.0",
@@ -142,6 +158,7 @@ extension Device {
         .init(
             name: "iPhone 8 Plus",
             identifiers: ["iPhone10,2", "iPhone10,5"],
+            cpu: .a11Bionic,
             modelNumbers: ["A1864", "A1897", "A1898", "A1899"],
             dockConnector: .lightning,
             bluetoothVersion: "5.0",
@@ -151,6 +168,7 @@ extension Device {
         .init(
             name: "iPhone X",
             identifiers: ["iPhone10,3", "iPhone10,6"],
+            cpu: .a11Bionic,
             modelNumbers: ["A1865", "A1901", "A1902", "A1903"],
             dockConnector: .lightning,
             bluetoothVersion: "5.0",
@@ -160,6 +178,7 @@ extension Device {
         .init(
             name: "iPhone XS",
             identifiers: ["iPhone11,2"],
+            cpu: .a12Bionic,
             modelNumbers: ["A1920", "A2097", "A2098", "A2099", "A2100"],
             dockConnector: .lightning,
             bluetoothVersion: "5.0",
@@ -169,6 +188,7 @@ extension Device {
         .init(
             name: "iPhone XS Max",
             identifiers: ["iPhone11,4", "iPhone11,6"],
+            cpu: .a12Bionic,
             modelNumbers: ["A1921", "A2101", "A2102", "A2103", "A2104"],
             dockConnector: .lightning,
             bluetoothVersion: "5.0",
@@ -178,6 +198,7 @@ extension Device {
         .init(
             name: "iPhone XR",
             identifiers: ["iPhone11,8"],
+            cpu: .a12Bionic,
             modelNumbers: ["A1984", "A2105", "A2106", "A2107", "A2108"],
             dockConnector: .lightning,
             bluetoothVersion: "5.0",
@@ -187,6 +208,7 @@ extension Device {
         .init(
             name: "iPhone 11",
             identifiers: ["iPhone12,1"],
+            cpu: .a13Bionic,
             modelNumbers: ["A2111", "A2221", "A2222", "A2223"],
             dockConnector: .lightning,
             bluetoothVersion: "5.0",
@@ -196,6 +218,7 @@ extension Device {
         .init(
             name: "iPhone 11 Pro",
             identifiers: ["iPhone12,3"],
+            cpu: .a13Bionic,
             modelNumbers: ["A2160", "A2215", "A2216", "A2217"],
             dockConnector: .lightning,
             bluetoothVersion: "5.0",
@@ -205,6 +228,7 @@ extension Device {
         .init(
             name: "iPhone 11 Pro Max",
             identifiers: ["iPhone12,5"],
+            cpu: .a13Bionic,
             modelNumbers: ["A2161", "A2218", "A2219", "A2220"],
             dockConnector: .lightning,
             bluetoothVersion: "5.0",
@@ -214,6 +238,7 @@ extension Device {
         .init(
             name: "iPhone SE (2nd generation)",
             identifiers: ["iPhone12,8"],
+            cpu: .a13Bionic,
             modelNumbers: ["A2275", "A2296", "A2297", "A2298"],
             dockConnector: .lightning,
             bluetoothVersion: "5.0",
@@ -223,6 +248,7 @@ extension Device {
         .init(
             name: "iPhone 12",
             identifiers: ["iPhone13,2"],
+            cpu: .a14Bionic,
             modelNumbers: ["A2172", "A2402", "A2403", "A2404", "A2405"],
             capabilities: [.magSafe],
             dockConnector: .lightning,
@@ -233,6 +259,7 @@ extension Device {
         .init(
             name: "iPhone 12 mini",
             identifiers: ["iPhone13,1"],
+            cpu: .a14Bionic,
             modelNumbers: ["A2176", "A2398", "A2399", "A2400", "A2401"],
             capabilities: [.magSafe],
             dockConnector: .lightning,
@@ -243,6 +270,7 @@ extension Device {
         .init(
             name: "iPhone 12 Pro",
             identifiers: ["iPhone13,3"],
+            cpu: .a14Bionic,
             modelNumbers: ["A2341", "A2406", "A2407", "A2408", "A2409"],
             capabilities: [.magSafe],
             dockConnector: .lightning,
@@ -253,6 +281,7 @@ extension Device {
         .init(
             name: "iPhone 12 Pro Max",
             identifiers: ["iPhone13,4"],
+            cpu: .a14Bionic,
             modelNumbers: ["A2342", "A2410", "A2411", "A2412", "A2413"],
             capabilities: [.magSafe],
             dockConnector: .lightning,
@@ -263,6 +292,7 @@ extension Device {
         .init(
             name: "iPhone 13",
             identifiers: ["iPhone14,5"],
+            cpu: .a15Bionic,
             modelNumbers: ["A2482", "A2631", "A2633", "A2634", "A2635"],
             capabilities: [.magSafe],
             dockConnector: .lightning,
@@ -273,6 +303,7 @@ extension Device {
         .init(
             name: "iPhone 13 mini",
             identifiers: ["iPhone14,4"],
+            cpu: .a15Bionic,
             modelNumbers: ["A2481", "A2626", "A2628", "A2629", "A2630"],
             capabilities: [.magSafe],
             dockConnector: .lightning,
@@ -283,6 +314,7 @@ extension Device {
         .init(
             name: "iPhone 13 Pro",
             identifiers: ["iPhone14,2"],
+            cpu: .a15Bionic,
             modelNumbers: ["A2483", "A2636", "A2638", "A2639", "A2640"],
             capabilities: [.magSafe],
             dockConnector: .lightning,
@@ -293,6 +325,7 @@ extension Device {
         .init(
             name: "iPhone 13 Pro Max",
             identifiers: ["iPhone14,3"],
+            cpu: .a15Bionic,
             modelNumbers: ["A2484", "A2641", "A2643", "A2644", "A2645"],
             capabilities: [.magSafe],
             dockConnector: .lightning,
@@ -303,6 +336,7 @@ extension Device {
         .init(
             name: "iPhone SE (3rd generation)",
             identifiers: ["iPhone14,6"],
+            cpu: .a15Bionic,
             modelNumbers: ["A2595", "A2782", "A2783", "A2784", "A2785"],
             dockConnector: .lightning,
             bluetoothVersion: "5.0",
@@ -312,6 +346,7 @@ extension Device {
         .init(
             name: "iPhone 14",
             identifiers: ["iPhone14,7"],
+            cpu: .a15Bionic,
             modelNumbers: ["A2649", "A2881", "A2882", "A2883", "A2884"],
             capabilities: [.magSafe],
             dockConnector: .lightning,
@@ -322,6 +357,7 @@ extension Device {
         .init(
             name: "iPhone 14 Plus",
             identifiers: ["iPhone14,8"],
+            cpu: .a15Bionic,
             modelNumbers: ["A2632", "A2885", "A2886", "A2887", "A2888"],
             capabilities: [.magSafe],
             dockConnector: .lightning,
@@ -332,6 +368,7 @@ extension Device {
         .init(
             name: "iPhone 14 Pro",
             identifiers: ["iPhone15,2"],
+            cpu: .a16Bionic,
             modelNumbers: ["A2650", "A2889", "A2890", "A2891", "A2892"],
             capabilities: [.magSafe],
             dockConnector: .lightning,
@@ -342,6 +379,7 @@ extension Device {
         .init(
             name: "iPhone 14 Pro Max",
             identifiers: ["iPhone15,3"],
+            cpu: .a16Bionic,
             modelNumbers: ["A2651", "A2893", "A2894", "A2895", "A2896"],
             capabilities: [.magSafe],
             dockConnector: .lightning,
@@ -352,6 +390,7 @@ extension Device {
         .init(
             name: "iPhone 15",
             identifiers: ["iPhone15,4"],
+            cpu: .a16Bionic,
             modelNumbers: ["A2846", "A3089", "A3090", "A3092"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
@@ -362,6 +401,7 @@ extension Device {
         .init(
             name: "iPhone 15 Plus",
             identifiers: ["iPhone15,5"],
+            cpu: .a16Bionic,
             modelNumbers: ["A2847", "A3093", "A3094", "A3096"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
@@ -372,6 +412,7 @@ extension Device {
         .init(
             name: "iPhone 15 Pro",
             identifiers: ["iPhone16,1"],
+            cpu: .a17Pro,
             modelNumbers: ["A2848", "A3101", "A3102", "A3104"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
@@ -382,6 +423,7 @@ extension Device {
         .init(
             name: "iPhone 15 Pro Max",
             identifiers: ["iPhone16,2"],
+            cpu: .a17Pro,
             modelNumbers: ["A2849", "A3105", "A3106", "A3108"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
@@ -392,6 +434,7 @@ extension Device {
         .init(
             name: "iPhone 16",
             identifiers: ["iPhone17,3"],
+            cpu: .a18,
             modelNumbers: ["A3081", "A3286", "A3287", "A3288"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
@@ -402,6 +445,7 @@ extension Device {
         .init(
             name: "iPhone 16 Plus",
             identifiers: ["iPhone17,4"],
+            cpu: .a18,
             modelNumbers: ["A3082", "A3289", "A3290", "A3291"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
@@ -412,6 +456,7 @@ extension Device {
         .init(
             name: "iPhone 16 Pro",
             identifiers: ["iPhone17,1"],
+            cpu: .a18Pro,
             modelNumbers: ["A3083", "A3292", "A3293", "A3294"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
@@ -422,6 +467,7 @@ extension Device {
         .init(
             name: "iPhone 16 Pro Max",
             identifiers: ["iPhone17,2"],
+            cpu: .a18Pro,
             modelNumbers: ["A3084", "A3295", "A3296", "A3297"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
@@ -432,6 +478,7 @@ extension Device {
         .init(
             name: "iPhone 16e",
             identifiers: ["iPhone17,5"],
+            cpu: .a18,
             modelNumbers: ["A3212", "A3408", "A3409", "A3410"],
             dockConnector: .usbC,
             bluetoothVersion: "5.3",
@@ -441,6 +488,7 @@ extension Device {
         .init(
             name: "iPhone 17",
             identifiers: ["iPhone18,3"],
+            cpu: .a19,
             modelNumbers: ["A3258", "A3519", "A3520", "A3521"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
@@ -451,6 +499,7 @@ extension Device {
         .init(
             name: "iPhone Air",
             identifiers: ["iPhone18,4"],
+            cpu: .a19Pro,
             modelNumbers: ["A3260", "A3516", "A3517", "A3518"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
@@ -461,6 +510,7 @@ extension Device {
         .init(
             name: "iPhone 17 Pro",
             identifiers: ["iPhone18,1"],
+            cpu: .a19Pro,
             modelNumbers: ["A3256", "A3522", "A3523", "A3524"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
@@ -472,6 +522,7 @@ extension Device {
         .init(
             name: "iPhone 17 Pro Max",
             identifiers: ["iPhone18,2"],
+            cpu: .a19Pro,
             modelNumbers: ["A3257", "A3525", "A3526", "A3527"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
@@ -483,6 +534,7 @@ extension Device {
         .init(
             name: "iPhone 17e",
             identifiers: ["iPhone18,5"],
+            cpu: .a19,
             modelNumbers: ["A3575", "A3634", "A3635"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
@@ -493,6 +545,7 @@ extension Device {
         .init(
             name: "iPhone 18 Pro",
             identifiers: ["iPhone19,2"],
+            cpu: .a20Pro,
             modelNumbers: ["A3472", "A3713", "A3714", "A3715"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
@@ -503,6 +556,7 @@ extension Device {
         .init(
             name: "iPhone 18 Pro Max",
             identifiers: ["iPhone19,3", "iPhone19,7"],
+            cpu: .a20Pro,
             modelNumbers: ["A3473", "A3716", "A3717", "A3718"],
             capabilities: [.magSafe],
             dockConnector: .usbC,
@@ -513,6 +567,7 @@ extension Device {
         .init(
             name: "iPhone Duo",
             identifiers: ["iPhone19,4"],
+            cpu: .a20Pro,
             modelNumbers: ["A3447", "A3719", "A3720", "A3721"],
             capabilities: [.magSafe],
             dockConnector: .usbC,

@@ -13,11 +13,13 @@ public struct DeviceDefinition: Hashable, Sendable {
     public let capabilities: Set<Capability>
     /// Bluetooth specification version from the model catalogue, not a live connection
     public let bluetoothVersion: String?
+    public let cpu: CPU?
     public let dockConnector: DockConnector
 
     public init(
         name: String,
         identifiers: [String],
+        cpu: CPU? = nil,
         modelNumbers: [String] = [],
         capabilities: Set<Capability> = [],
         dockConnector: DockConnector,
@@ -27,6 +29,7 @@ public struct DeviceDefinition: Hashable, Sendable {
         eSIMOnlyModelNumbers: Set<String>? = nil,
         batteryCapacityOverrides: [String: BatteryCapacity] = [:]
     ) {
+        self.cpu = cpu
         self.modelNumbers = modelNumbers
         self.batteryCapacity = batteryCapacity
         self.eSIMOnlyBatteryCapacity = eSIMOnlyBatteryCapacity

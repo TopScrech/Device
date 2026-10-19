@@ -92,3 +92,31 @@ SIM configurations use Apple's iPhone model guide — eSIM-only does not automat
 ```sh
 swift test --scratch-path /tmp/device-package-build
 ```
+
+## CPU specifications
+
+```swift
+Device.current.cpu?.description
+Device.current.cpu?.maxClockSpeed
+Device.current.cpu?.instructionSet
+Device.current.cpu?.techNode
+Device.current.cpu?.memoryType
+Device.current.cpu?.neuralEngineTOPS
+Device.current.cpu?.neuralEngineCores
+Device.current.cpu?.l1DataCache
+Device.current.cpu?.l1InstructionCache
+Device.current.cpu?.l2Cache
+Device.current.cpu?.l3Cache
+```
+
+Every catalogued device has a CPU mapping, available through hardware identifiers or A-model numbers on any platform — unknown devices return `nil`
+
+Specifications are optional display strings migrated from Device Specs, retaining its units, ranges, estimates and source comments — this is not an independent accuracy audit
+
+Empty values, placeholders and cache entries explicitly marked as uncertain (`???`) return `nil` — the cache fields represent L1 data, L1 instruction, L2 and L3, not four cache levels
+
+Base M-series chips expose their base Neural Engine and clock values without the previous Max/Ultra annotations — separate chip variants have no detailed specifications until explicitly catalogued
+
+The CPU enum includes Mac and accessory chips, but this does not add Mac or AirPods device definitions
+
+CPU identities were adapted from [kudit/Device](https://github.com/kudit/Device) and display names from [DeviceKit](https://github.com/devicekit/DeviceKit), with changes to naming, optional unknown values and platform-independent availability — upstream license notices are in `Licenses`

@@ -24,6 +24,8 @@ public struct Device: Hashable, Sendable {
         }
     }
 
+    public var cpu: CPU? { definition?.cpu }
+
     public var name: String? {
         definition?.name
     }
