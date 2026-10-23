@@ -15,6 +15,8 @@ public struct DeviceDefinition: Hashable, Sendable {
     /// Other capacity differences, such as GPS and cellular Apple Watches
     public let batteryCapacityOverrides: [String: BatteryCapacity]
     public let capabilities: Set<Capability>
+    /// Complete capability sets for hardware identifiers or regulatory A-models that differ from the base set
+    public let capabilityOverrides: [String: Set<Capability>]
     /// Bluetooth specification version from the model catalogue, not a live connection
     public let bluetoothVersion: String?
     public let cpu: CPU?
@@ -34,6 +36,7 @@ public struct DeviceDefinition: Hashable, Sendable {
         cpu: CPU? = nil,
         modelNumbers: [String] = [],
         capabilities: Set<Capability> = [],
+        capabilityOverrides: [String: Set<Capability>] = [:],
         dockConnector: DockConnector,
         voltage: String? = nil,
         waterResistance: String? = nil,
@@ -58,6 +61,7 @@ public struct DeviceDefinition: Hashable, Sendable {
         self.releaseDate = releaseDate
         self.identifiers = identifiers
         self.capabilities = capabilities
+        self.capabilityOverrides = capabilityOverrides
         self.dockConnector = dockConnector
         self.bluetoothVersion = bluetoothVersion
     }

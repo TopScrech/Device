@@ -366,6 +366,11 @@ extension Device {
             releaseDate: .init(year: 2022, month: 3, day: 18),
             cpu: .m1,
             modelNumbers: ["A2588", "A2589", "A2591"],
+            capabilityOverrides: [
+                "iPad13,17": [.fiveG],
+                "A2589": [.fiveG],
+                "A2591": [.fiveG]
+            ],
             dockConnector: .usbC,
             voltage: "3.78 V",
             waterResistance: "None",
@@ -380,6 +385,12 @@ extension Device {
             releaseDate: .init(year: 2022, month: 10, day: 26),
             cpu: .a14Bionic,
             modelNumbers: ["A2696", "A2757", "A2777", "A3162"],
+            capabilityOverrides: [
+                "iPad13,19": [.fiveG],
+                "A2757": [.fiveG],
+                "A2777": [.fiveG],
+                "A3162": [.fiveG]
+            ],
             dockConnector: .usbC,
             voltage: "3.73 V",
             waterResistance: "None",
@@ -394,6 +405,13 @@ extension Device {
             releaseDate: .init(year: 2021, month: 5, day: 21),
             cpu: .m1,
             modelNumbers: ["A2301", "A2377", "A2459", "A2460"],
+            capabilityOverrides: [
+                "iPad13,6": [.fiveG],
+                "iPad13,7": [.fiveG],
+                "A2301": [.fiveG],
+                "A2459": [.fiveG],
+                "A2460": [.fiveG]
+            ],
             dockConnector: .usbC,
             voltage: "3.81 V",
             waterResistance: "None",
@@ -408,6 +426,13 @@ extension Device {
             releaseDate: .init(year: 2021, month: 5, day: 21),
             cpu: .m1,
             modelNumbers: ["A2378", "A2379", "A2461", "A2462"],
+            capabilityOverrides: [
+                "iPad13,10": [.fiveG],
+                "iPad13,11": [.fiveG],
+                "A2379": [.fiveG],
+                "A2461": [.fiveG],
+                "A2462": [.fiveG]
+            ],
             dockConnector: .usbC,
             voltage: "3.82 V",
             waterResistance: "None",
@@ -422,6 +447,11 @@ extension Device {
             releaseDate: .init(year: 2021, month: 9, day: 24),
             cpu: .a15Bionic,
             modelNumbers: ["A2567", "A2568", "A2569"],
+            capabilityOverrides: [
+                "iPad14,2": [.fiveG],
+                "A2568": [.fiveG],
+                "A2569": [.fiveG]
+            ],
             dockConnector: .usbC,
             voltage: "3.8 V",
             waterResistance: "None",
@@ -436,6 +466,12 @@ extension Device {
             releaseDate: .init(year: 2022, month: 10, day: 26),
             cpu: .m2,
             modelNumbers: ["A2435", "A2759", "A2761", "A2762"],
+            capabilityOverrides: [
+                "iPad14,4": [.fiveG],
+                "A2435": [.fiveG],
+                "A2761": [.fiveG],
+                "A2762": [.fiveG]
+            ],
             dockConnector: .usbC,
             waterResistance: "None",
             waterResistanceDescription: "None",
@@ -449,6 +485,12 @@ extension Device {
             releaseDate: .init(year: 2022, month: 10, day: 26),
             cpu: .m2,
             modelNumbers: ["A2436", "A2437", "A2764", "A2766"],
+            capabilityOverrides: [
+                "iPad14,6": [.fiveG],
+                "A2437": [.fiveG],
+                "A2764": [.fiveG],
+                "A2766": [.fiveG]
+            ],
             dockConnector: .usbC,
             waterResistance: "None",
             waterResistanceDescription: "None",
@@ -462,6 +504,11 @@ extension Device {
             releaseDate: .init(year: 2024, month: 5, day: 15),
             cpu: .m2,
             modelNumbers: ["A2902", "A2903", "A2904"],
+            capabilityOverrides: [
+                "iPad14,9": [.fiveG],
+                "A2903": [.fiveG],
+                "A2904": [.fiveG]
+            ],
             dockConnector: .usbC,
             waterResistance: "None",
             waterResistanceDescription: "None",
@@ -475,6 +522,11 @@ extension Device {
             releaseDate: .init(year: 2024, month: 5, day: 15),
             cpu: .m2,
             modelNumbers: ["A2898", "A2899", "A2900"],
+            capabilityOverrides: [
+                "iPad14,11": [.fiveG],
+                "A2899": [.fiveG],
+                "A2900": [.fiveG]
+            ],
             dockConnector: .usbC,
             waterResistance: "None",
             waterResistanceDescription: "None",
@@ -488,6 +540,11 @@ extension Device {
             releaseDate: .init(year: 2024, month: 5, day: 15),
             cpu: .m4,
             modelNumbers: ["A2836", "A2837", "A3006"],
+            capabilityOverrides: [
+                "iPad16,4": [.fiveG],
+                "A2837": [.fiveG],
+                "A3006": [.fiveG]
+            ],
             dockConnector: .usbC,
             waterResistance: "None",
             waterResistanceDescription: "None",
@@ -501,6 +558,11 @@ extension Device {
             releaseDate: .init(year: 2024, month: 5, day: 15),
             cpu: .m4,
             modelNumbers: ["A2925", "A2926", "A3007"],
+            capabilityOverrides: [
+                "iPad16,6": [.fiveG],
+                "A2926": [.fiveG],
+                "A3007": [.fiveG]
+            ],
             dockConnector: .usbC,
             voltage: "3.819 V",
             waterResistance: "None",
@@ -515,6 +577,11 @@ extension Device {
             releaseDate: .init(year: 2024, month: 10, day: 23),
             cpu: .a17Pro,
             modelNumbers: ["A2993", "A2995", "A2996"],
+            capabilityOverrides: [
+                "iPad16,2": [.fiveG],
+                "A2995": [.fiveG],
+                "A2996": [.fiveG]
+            ],
             dockConnector: .usbC,
             waterResistance: "None",
             waterResistanceDescription: "None",
@@ -528,6 +595,11 @@ extension Device {
             releaseDate: .init(year: 2025, month: 3, day: 12),
             cpu: .m3,
             modelNumbers: ["A3268", "A3269", "A3271"],
+            capabilityOverrides: [
+                "iPad15,6": [.fiveG],
+                "A3269": [.fiveG],
+                "A3271": [.fiveG]
+            ],
             dockConnector: .usbC,
             waterResistance: "None",
             waterResistanceDescription: "None",
@@ -541,6 +613,11 @@ extension Device {
             releaseDate: .init(year: 2025, month: 3, day: 12),
             cpu: .m3,
             modelNumbers: ["A3266", "A3267", "A3270"],
+            capabilityOverrides: [
+                "iPad15,4": [.fiveG],
+                "A3267": [.fiveG],
+                "A3270": [.fiveG]
+            ],
             dockConnector: .usbC,
             waterResistance: "None",
             waterResistanceDescription: "None",
@@ -554,6 +631,11 @@ extension Device {
             releaseDate: .init(year: 2025, month: 3, day: 12),
             cpu: .a16Bionic,
             modelNumbers: ["A3354", "A3355", "A3356"],
+            capabilityOverrides: [
+                "iPad15,8": [.fiveG],
+                "A3355": [.fiveG],
+                "A3356": [.fiveG]
+            ],
             dockConnector: .usbC,
             waterResistance: "None",
             waterResistanceDescription: "None",
@@ -567,6 +649,11 @@ extension Device {
             releaseDate: .init(year: 2025, month: 10, day: 22),
             cpu: .m5,
             modelNumbers: ["A3357", "A3358", "A3359"],
+            capabilityOverrides: [
+                "iPad17,2": [.fiveG],
+                "A3358": [.fiveG],
+                "A3359": [.fiveG]
+            ],
             dockConnector: .usbC,
             waterResistance: "None",
             waterResistanceDescription: "None",
@@ -580,6 +667,11 @@ extension Device {
             releaseDate: .init(year: 2025, month: 10, day: 22),
             cpu: .m5,
             modelNumbers: ["A3360", "A3361", "A3362"],
+            capabilityOverrides: [
+                "iPad17,4": [.fiveG],
+                "A3361": [.fiveG],
+                "A3362": [.fiveG]
+            ],
             dockConnector: .usbC,
             waterResistance: "None",
             waterResistanceDescription: "None",
@@ -593,6 +685,11 @@ extension Device {
             releaseDate: .init(year: 2026, month: 3, day: 11),
             cpu: .m4,
             modelNumbers: ["A3459", "A3460", "A3463"],
+            capabilityOverrides: [
+                "iPad16,9": [.fiveG],
+                "A3460": [.fiveG],
+                "A3463": [.fiveG]
+            ],
             dockConnector: .usbC,
             waterResistance: "None",
             waterResistanceDescription: "None",
@@ -606,6 +703,11 @@ extension Device {
             releaseDate: .init(year: 2026, month: 3, day: 11),
             cpu: .m4,
             modelNumbers: ["A3461", "A3462", "A3464"],
+            capabilityOverrides: [
+                "iPad16,11": [.fiveG],
+                "A3462": [.fiveG],
+                "A3464": [.fiveG]
+            ],
             dockConnector: .usbC,
             waterResistance: "None",
             waterResistanceDescription: "None",

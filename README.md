@@ -6,6 +6,9 @@ A pure Swift device information library with no third-party dependencies or code
 import Device
 
 let supportsMagSafe = Device.current.has(.magSafe)
+let supportsWirelessCharging = Device.current.has(.wirelessCharging)
+let supports5G = Device.current.has(.fiveG)
+let hasDynamicIsland = Device.current.has(.dynamicIsland)
 let phone = Device(identifier: "iPhone16,1")
 let capabilities = phone.capabilities
 let connector = phone.dockConnector // .usbC
@@ -26,7 +29,7 @@ Each model has its own initializer in `Sources/Device/Models`, with its name, re
     name: "iPhone Duo",
     identifiers: ["iPhone19,4"],
     modelNumbers: ["A3447", "A3719", "A3720", "A3721"],
-    capabilities: [.magSafe],
+    capabilities: [.magSafe, .wirelessCharging, .fiveG, .dynamicIsland],
     dockConnector: .usbC,
     batteryCapacity: .init(batteryMilliampHours: [2962, 1921]),
     eSIMOnlyModelNumbers: ["A3447", "A3719", "A3720", "A3721"]
@@ -41,7 +44,18 @@ Bluetooth values were migrated from Device Specs' custom mapping, with iPhone Du
 
 The original mapping cites [EveryMac](https://everymac.com/systems/apple/iphone/iphone-faq/iphone-bluetooth-support-by-model.html) and [Apple's iPhone comparison](https://apple.com/iphone/compare)
 
-The initial capability is `.magSafe`, meaning built-in iPhone magnetic wireless charging — Mac MagSafe power connectors and accessory attachment detection are outside its scope
+Capabilities include `.magSafe`, `.wirelessCharging`, `.fiveG` and `.dynamicIsland`
+
+`.magSafe` means built-in iPhone magnetic wireless charging — Mac MagSafe power connectors and accessory attachment detection are outside its scope
+
+`.wirelessCharging` includes iPhone Qi/MagSafe and the Apple Watch inductive charger, without implying that Apple Watch supports ordinary Qi pads or that iPads can receive wireless power
+
+`.fiveG` describes hardware support, including Apple Watch RedCap, not current coverage or a cellular subscription
+Wi-Fi-only iPads and GPS-only watches do not receive this capability
+`DeviceDefinition.capabilities` contains the common base set; `capabilityOverrides` supplies complete sets for specific hardware identifiers or A-models
+Use `Device.capabilities` or `has(_:)` for the resolved variant, including `Device(modelNumber:)` and `withModelNumber(_:)`
+
+The [capability audit](Documentation/Capabilities.md) records the results and at least two source links for each of the 150 model definitions, plus cellular variant evidence and the corrected Apple Watch SE 3 size mapping
 
 Model capabilities are maintained directly in Swift, informed by [DeviceKit](https://github.com/devicekit/DeviceKit) and [Device](https://github.com/kudit/Device)
 

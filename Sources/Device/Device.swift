@@ -43,7 +43,8 @@ public struct Device: Hashable, Sendable {
 
     /// Known capabilities only — unrecognized models have an empty set
     public var capabilities: Set<Capability> {
-        definition?.capabilities ?? []
+        guard let definition else { return [] }
+        return definition.capabilityOverrides[modelNumber ?? identifier] ?? definition.capabilities
     }
 
     /// Unknown models never default to Lightning
