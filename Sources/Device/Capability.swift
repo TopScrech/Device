@@ -1,4 +1,10 @@
 public enum Capability: Hashable, Sendable {
+    /// A dedicated LiDAR scanner, not a TrueDepth camera or a proximity sensor
+    case lidar
+
+    /// Rounded corners of the active pixel display, not the enclosure or cover glass
+    case roundedDisplayCorners
+
     /// Built-in iPhone MagSafe magnetic wireless charging
     /// This does not describe Mac MagSafe power connectors or attached accessories
     case magSafe

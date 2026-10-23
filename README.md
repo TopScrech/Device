@@ -171,3 +171,22 @@ See [iPhone evidence](Documentation/iPhoneDates.md), [iPad evidence](Documentati
 
 `DeviceDate` validates Gregorian components at initialization and supports chronological comparison
 When displaying it with Foundation, use the same explicit Gregorian calendar and time zone for both conversion and formatting so the displayed day cannot shift
+
+## Display and LiDAR
+
+```swift
+let device = Device.current
+device.has(.lidar)
+device.has(.roundedDisplayCorners)
+device.displays // All built-in panels; nil for unknown hardware, [] for Apple TV/HomePod
+device.display?.resolution // Native panel pixels, not the rendering buffer
+device.display?.resolution.aspectRatio // Exact reduced width:height ratio
+device.display?.ppi
+device.display?.diagonal // Published inches; nil on Apple Watch
+device.display?.estimatedDiagonal // Derived from pixels and PPI
+```
+
+All 150 catalogued definitions have an explicit display classification and audited LiDAR/rounded-corner capabilities
+Folding devices preserve separate inner and outer panels; `display` returns the first panel rather than guessing which is active
+The app must query live platform APIs separately for brightness and connected monitors
+See the [display audit](Documentation/Displays.md) and [per-specification source records](Documentation/DisplayEvidence.json) for two or more sources per field, derived values, and source disagreements

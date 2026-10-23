@@ -35,6 +35,12 @@ public struct Device: Hashable, Sendable {
     /// Nominal voltage from the catalogue, nil when not mapped
     public var voltage: String? { definition?.voltage }
 
+    /// All catalogued built-in displays, nil for unknown models, empty for screenless devices
+    public var displays: [DeviceDisplay]? { definition?.displays }
+
+    /// Primary display, or the inner display on a folding device, not a live display selection
+    public var display: DeviceDisplay? { displays?.first }
+
     public var cpu: CPU? { definition?.cpu }
 
     public var name: String? {

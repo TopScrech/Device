@@ -7,6 +7,7 @@ extension Device {
             releaseDate: .init(year: 2007, month: 9, day: 13),
             cpu: .s5L8900,
             modelNumbers: ["A1213"],
+            displays: [.init(role: .primary, diagonal: 3.5, resolution: .init(width: 320, height: 480), ppi: 163)],
             dockConnector: .thirtyPin
         ),
         .init(
@@ -16,6 +17,7 @@ extension Device {
             releaseDate: .init(year: 2008, month: 9, day: 9),
             cpu: .s5L8720,
             modelNumbers: ["A1288", "A1319"],
+            displays: [.init(role: .primary, diagonal: 3.5, resolution: .init(width: 320, height: 480), ppi: 163)],
             dockConnector: .thirtyPin
         ),
         .init(
@@ -25,6 +27,7 @@ extension Device {
             releaseDate: .init(year: 2009, month: 9, day: 9),
             cpu: .s5L8922,
             modelNumbers: ["A1318"],
+            displays: [.init(role: .primary, diagonal: 3.5, resolution: .init(width: 320, height: 480), ppi: 163)],
             dockConnector: .thirtyPin
         ),
         .init(
@@ -34,6 +37,7 @@ extension Device {
             releaseDate: .init(year: 2010, month: 9, day: 8),
             cpu: .a4,
             modelNumbers: ["A1367"],
+            displays: [.init(role: .primary, diagonal: 3.5, resolution: .init(width: 640, height: 960), ppi: 326)],
             dockConnector: .thirtyPin
         ),
         .init(
@@ -43,6 +47,7 @@ extension Device {
             releaseDate: .init(year: 2012, month: 10, day: 9),
             cpu: .a5,
             modelNumbers: ["A1421", "A1509"],
+            displays: [.init(role: .primary, diagonal: 4.0, resolution: .init(width: 640, height: 1136), ppi: 326)],
             dockConnector: .lightning,
             voltage: "3.7 V",
             waterResistance: "None",
@@ -57,6 +62,7 @@ extension Device {
             releaseDate: .init(year: 2015, month: 7, day: 15),
             cpu: .a8,
             modelNumbers: ["A1574"],
+            displays: [.init(role: .primary, diagonal: 4.0, resolution: .init(width: 640, height: 1136), ppi: 326)],
             dockConnector: .lightning,
             voltage: "3.83 V",
             waterResistance: "None",
@@ -71,6 +77,7 @@ extension Device {
             releaseDate: .init(year: 2019, month: 5, day: 30),
             cpu: .a10Fusion,
             modelNumbers: ["A2178"],
+            displays: [.init(role: .primary, diagonal: 4.0, resolution: .init(width: 640, height: 1136), ppi: 326)],
             dockConnector: .lightning,
             voltage: "3.83 V",
             waterResistance: "None",

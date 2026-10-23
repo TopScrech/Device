@@ -7,6 +7,7 @@ extension Device {
             releaseDate: .init(year: 2018, month: 2, day: 9),
             cpu: .a8,
             modelNumbers: ["A1639"],
+            displays: [],
             dockConnector: .unknown,
             waterResistance: "None",
             waterResistanceDescription: "None",
@@ -19,6 +20,7 @@ extension Device {
             releaseDate: .init(year: 2020, month: 11, day: 16),
             cpu: .s5,
             modelNumbers: ["A2374", "A2531"],
+            displays: [],
             dockConnector: .unknown,
             bluetoothVersion: "5.0"
         ),
@@ -29,6 +31,7 @@ extension Device {
             releaseDate: .init(year: 2023, month: 2, day: 3),
             cpu: .s7,
             modelNumbers: ["A2825", "A2878"],
+            displays: [],
             dockConnector: .unknown,
             bluetoothVersion: "5.0"
         )
