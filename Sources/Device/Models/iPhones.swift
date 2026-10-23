@@ -882,6 +882,8 @@ extension Device {
             capabilities: [.magSafe, .wirelessCharging, .fiveG, .dynamicIsland, .roundedDisplayCorners],
             displays: [.init(role: .inner, diagonal: 7.6, resolution: .init(width: 1878, height: 2670), ppi: 430), .init(role: .outer, diagonal: 5.4, resolution: .init(width: 1398, height: 2034), ppi: 460)],
             dockConnector: .usbC,
+            waterResistance: "IP68 (IEC 60529)",
+            waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "6.0",
             batteryCapacity: .init(batteryMilliampHours: [2962, 1921]),
             eSIMOnlyModelNumbers: ["A3447", "A3719", "A3720", "A3721"]

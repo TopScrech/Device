@@ -146,7 +146,9 @@ Both properties are optional catalogue strings, also available on `DeviceDefinit
 
 Values and wording were migrated unchanged from Device Specs, including the existing iPhone 16e inconsistency (IP68 rating with a `"None"` description) — this migration is not an independent accuracy audit
 
-Models absent from those mappings, including iPhone Duo, remain unmapped — simulator lookup uses its simulated model through `Device.current`, and A-model lookup shares the same specifications
+iPhone Duo adds a verified IP68 rating and a 6-meter, 30-minute description, with [two source documents](Documentation/WaterResistance.md) supporting both fields
+
+Other models absent from those mappings remain unmapped — simulator lookup uses its simulated model through `Device.current`, and A-model lookup shares the same specifications
 
 ## Voltage
 

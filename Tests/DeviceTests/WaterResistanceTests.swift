@@ -18,7 +18,7 @@ import Device
     #expect(Device(identifier: "iPhone8,1").waterResistance == "None")
     #expect(Device(identifier: "iPad13,4").waterResistanceDescription == "None")
     #expect(Device(identifier: "AppleTV11,1").waterResistance == "None")
-    for identifier in ["unknown", "iPhone99,1", "iPhone19,4"] {
+    for identifier in ["unknown", "iPhone99,1"] {
         #expect(Device(identifier: identifier).waterResistance == nil)
         #expect(Device(identifier: identifier).waterResistanceDescription == nil)
     }
@@ -33,4 +33,11 @@ import Device
         }
     }
     #expect(Device(identifier: "iPhone16,1", modelNumber: "A0000").waterResistance == nil)
+}
+
+@Test(arguments: ["iPhone19,4", "A3447", "A3719", "A3720", "A3721"])
+func iphoneDuoWaterResistance(identifier: String) {
+    let device = Device(identifier: identifier)
+    #expect(device.waterResistance == "IP68 (IEC 60529)")
+    #expect(device.waterResistanceDescription == "Up to 30 minutes and 6m deep")
 }
