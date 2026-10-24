@@ -882,8 +882,8 @@ extension Device {
             capabilities: [.magSafe, .wirelessCharging, .fiveG, .dynamicIsland, .roundedDisplayCorners],
             displays: [.init(role: .inner, diagonal: 7.6, resolution: .init(width: 1878, height: 2670), ppi: 430), .init(role: .outer, diagonal: 5.4, resolution: .init(width: 1398, height: 2034), ppi: 460)],
             dockConnector: .usbC,
-            // Derived from (11.567 + 7.506) * 1000 / (2962 + 1921), rounded to two decimals
-            voltage: "3.91 V",
+            // Derived from (11.567 + 7.506) * 1000 / (2962 + 1921), rounded to three decimals
+            voltage: "3.906 V",
             waterResistance: "IP68 (IEC 60529)",
             waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "6.0",
