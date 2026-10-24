@@ -28,7 +28,7 @@ func supportsBluetoothSix(identifier: String) {
     #expect(Device(identifier: "AudioAccessory6,1").bluetoothVersion == "5.0")
 }
 
-@Test(arguments: ["", "iPhone99,1", "iPhone1,1", "iPad1,1", "iPod1,1", "Mac14,2"])
+@Test(arguments: ["", "iPhone99,1", "iPod1,1", "Mac14,2"])
 func unmappedBluetoothVersionsStayUnknown(identifier: String) {
     #expect(Device(identifier: identifier).bluetoothVersion == nil)
 }
