@@ -3,6 +3,7 @@ import Device
 
 @Test func preservesVoltageValuesAndPrecision() {
     #expect(Device(identifier: "iPhone14,2").voltage == "3.87 V")
+    #expect(Device(identifier: "iPhone19,4").voltage == "3.91 V")
     #expect(Device(identifier: "iPad5,3").voltage == "3.763 V")
     #expect(Device(identifier: "AppleTV6,2").voltage == "12 V")
     #expect(Device(identifier: "iPod9,1").voltage == "3.83 V")
@@ -10,7 +11,7 @@ import Device
 }
 
 @Test func unknownVoltageRemainsNil() {
-    for identifier in ["unknown", "iPhone99,1", "iPhone18,2", "iPhone19,4", "iPhone14,5"] {
+    for identifier in ["unknown", "iPhone99,1", "iPhone18,2", "iPhone14,5"] {
         #expect(Device(identifier: identifier).voltage == nil)
     }
 }

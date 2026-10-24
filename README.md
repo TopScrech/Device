@@ -158,7 +158,9 @@ Other models absent from those mappings remain unmapped — simulator lookup use
 
 Values were migrated unchanged from Device Specs, preserving units, fractional precision and the Watch Series 3 GPS/cellular annotation — missing values and old `"-"` placeholders return `nil`
 
-This migration is not an independent accuracy audit, and voltage is not calculated from capacity or energy
+This migration is not an independent accuracy audit
+
+iPhone Duo stores a derived nominal voltage of `3.91 V`, supplied by the project owner using `(11.567 + 7.506) * 1000 / (2962 + 1921) ≈ 3.906 V`, rounded to two decimals — the battery energy and capacity values come from the supplied screenshots with [this video](https://youtu.be/ZDXOxRLZRQo) as the source
 
 ## Announcement and release dates
 
