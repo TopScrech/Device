@@ -8,7 +8,7 @@ extension Device {
             cpu: .a8,
             modelNumbers: ["A1639"],
             displays: [],
-            dockConnector: .unknown,
+            dockConnector: .none,
             waterResistance: "None",
             waterResistanceDescription: "None",
             bluetoothVersion: "5.0"
@@ -21,7 +21,7 @@ extension Device {
             cpu: .s5,
             modelNumbers: ["A2374", "A2531"],
             displays: [],
-            dockConnector: .unknown,
+            dockConnector: .none,
             bluetoothVersion: "5.0"
         ),
         .init(
@@ -32,7 +32,7 @@ extension Device {
             cpu: .s7,
             modelNumbers: ["A2825", "A2878"],
             displays: [],
-            dockConnector: .unknown,
+            dockConnector: .none,
             bluetoothVersion: "5.0"
         )
     ]

@@ -1,4 +1,4 @@
-/// The built-in docking connector on an iPhone, iPad or iPod touch
+/// The built-in docking connector, none for devices without one, or unknown when not mapped
 public enum DockConnector: Hashable, Sendable {
-    case usbC, lightning, thirtyPin, unknown
+    case usbC, lightning, thirtyPin, none, unknown
 }

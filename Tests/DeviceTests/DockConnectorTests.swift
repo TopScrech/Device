@@ -16,7 +16,7 @@ func usesThirtyPin(identifier: String) {
     #expect(Device(identifier: identifier).dockConnector == .thirtyPin)
 }
 
-@Test(arguments: ["", "iPhone99,1", "iPad99,1", "Mac14,2", "Watch7,1"])
+@Test(arguments: ["", "iPhone99,1", "iPad99,1", "Mac14,2", "Watch99,1"])
 func doesNotGuessUncataloguedConnectors(identifier: String) {
     #expect(Device(identifier: identifier).dockConnector == .unknown)
 }
@@ -38,5 +38,13 @@ func doesNotGuessUncataloguedConnectors(identifier: String) {
             #expect(!identifier.isEmpty)
             #expect(identifiers.insert(identifier).inserted)
         }
+    }
+}
+
+@Test(arguments: Device.appleWatches + Device.appleTVs + Device.homePods)
+func hasNoDockConnector(model: DeviceDefinition) {
+    #expect(model.dockConnector == .none)
+    for identifier in model.identifiers {
+        #expect(Device(identifier: identifier).dockConnector == .none)
     }
 }
