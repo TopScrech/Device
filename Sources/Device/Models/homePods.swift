@@ -22,6 +22,8 @@ extension Device {
             modelNumbers: ["A2374", "A2531"],
             displays: [],
             dockConnector: .none,
+            waterResistance: "None",
+            waterResistanceDescription: "None",
             bluetoothVersion: "5.0"
         ),
         .init(
@@ -33,6 +35,8 @@ extension Device {
             modelNumbers: ["A2825", "A2878"],
             displays: [],
             dockConnector: .none,
+            waterResistance: "None",
+            waterResistanceDescription: "None",
             bluetoothVersion: "5.0"
         )
     ]
