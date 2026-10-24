@@ -31,7 +31,7 @@ Each model has its own initializer in `Sources/Device/Models`, with its name, re
     modelNumbers: ["A3447", "A3719", "A3720", "A3721"],
     capabilities: [.magSafe, .wirelessCharging, .fiveG, .dynamicIsland],
     dockConnector: .usbC,
-    batteryCapacity: .init(batteryMilliampHours: [2962, 1921]),
+    batteryCapacity: .init(batteryMilliampHours: [2962, 1921], wattHours: 19.073),
     eSIMOnlyModelNumbers: ["A3447", "A3719", "A3720", "A3721"]
 )
 ```
@@ -81,6 +81,7 @@ let duo = Device(identifier: "iPhone19,4")
 duo.batteryCapacity?.batteryCount // 2
 duo.batteryCapacity?.batteryMilliampHours // [2962, 1921]
 duo.batteryCapacity?.milliampHours // 4883
+duo.batteryCapacity?.wattHours // 19.073
 ```
 
 `BatteryCapacity` keeps mAh and Wh separately as optional numeric values, preserving fractional values and models where only Wh is known
@@ -95,7 +96,7 @@ Unknown A-models and A-models belonging to a different device return no definiti
 
 Battery values were migrated as supplied from Device Specs, including its existing mAh/Wh values — this migration is not an independent accuracy audit of those values
 
-Duo's eSIM-only configuration and two battery capacities were supplied by the project owner — missing capacity data remains `nil`, including models without a built-in battery
+Duo's eSIM-only configuration and two battery capacities were supplied by the project owner — the supplied screenshots show 2962 mAh / 11.567 Wh and 1921 mAh / 7.506 Wh, totaling 4883 mAh / 19.073 Wh, with [this video](https://youtu.be/ZDXOxRLZRQo) supplied as the source — missing capacity data remains `nil`, including models without a built-in battery
 
 A-model data was cross-referenced from [kudit/Device's model catalogue](https://github.com/kudit/Device/tree/main/Sources/Models) and Apple's model guides for [iPhone](https://support.apple.com/en-us/108044), [iPad](https://support.apple.com/en-us/108043), [Watch](https://support.apple.com/en-us/108056) and [iPod](https://support.apple.com/en-us/103823)
 

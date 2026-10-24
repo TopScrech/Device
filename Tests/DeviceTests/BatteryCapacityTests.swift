@@ -31,7 +31,7 @@ import Device
         #expect(phone.batteryCapacity?.batteryCount == 2)
         #expect(phone.batteryCapacity?.batteryMilliampHours == [2962, 1921])
         #expect(phone.batteryCapacity?.milliampHours == 4883)
-        #expect(phone.batteryCapacity?.wattHours == nil)
+        #expect(phone.batteryCapacity?.wattHours == 19.073)
     }
 }
 
