@@ -540,6 +540,7 @@ extension Device {
             ],
             displays: [.init(role: .primary, diagonal: nil, resolution: .init(width: 374, height: 446), ppi: 326)],
             dockConnector: .none,
+            waterResistance: "IP6X",
             waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "5.3"
         ),
@@ -560,6 +561,7 @@ extension Device {
             dockConnector: .none,
             // iFixit teardown battery values supplied by the user: https://youtu.be/c1duzuXz7D0
             voltage: "3.875 V",
+            waterResistance: "IP6X",
             waterResistanceDescription: "Up to 50m deep",
             bluetoothVersion: "5.3",
             batteryCapacity: .init(milliampHours: 377, wattHours: 1.461)
