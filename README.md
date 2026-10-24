@@ -31,7 +31,7 @@ Each model has its own initializer in `Sources/Device/Models`, with its name, re
     modelNumbers: ["A3447", "A3719", "A3720", "A3721"],
     capabilities: [.magSafe, .wirelessCharging, .fiveG, .dynamicIsland],
     dockConnector: .usbC,
-    batteryCapacity: .init(batteryMilliampHours: [2962, 1921], wattHours: 19.073),
+    batteryCapacity: .init(batteryMilliampHours: [2962, 1921], batteryWattHours: [11.567, 7.506]),
     eSIMOnlyModelNumbers: ["A3447", "A3719", "A3720", "A3721"]
 )
 ```
@@ -81,6 +81,7 @@ let duo = Device(identifier: "iPhone19,4")
 duo.batteryCapacity?.batteryCount // 2
 duo.batteryCapacity?.batteryMilliampHours // [2962, 1921]
 duo.batteryCapacity?.milliampHours // 4883
+duo.batteryCapacity?.batteryWattHours // [11.567, 7.506]
 duo.batteryCapacity?.wattHours // 19.073
 ```
 

@@ -31,7 +31,8 @@ import Device
         #expect(phone.batteryCapacity?.batteryCount == 2)
         #expect(phone.batteryCapacity?.batteryMilliampHours == [2962, 1921])
         #expect(phone.batteryCapacity?.milliampHours == 4883)
-        #expect(phone.batteryCapacity?.wattHours == 19.073)
+        #expect(phone.batteryCapacity?.batteryWattHours == [11.567, 7.506])
+        #expect(abs((phone.batteryCapacity?.wattHours ?? 0) - 19.073) < 0.000001)
     }
 }
 
@@ -81,4 +82,20 @@ import Device
         }
         #expect(Set(definition.batteryCapacityOverrides.keys).isSubset(of: Set(definition.modelNumbers)))
     }
+}
+
+@Test func individualWattHoursPreserveUnitsAndBatteryCount() {
+    let capacity = BatteryCapacity(batteryWattHours: [11.567, 7.506])
+    #expect(capacity.batteryCount == 2)
+    #expect(capacity.batteryMilliampHours.isEmpty)
+    #expect(capacity.milliampHours == nil)
+    #expect(abs((capacity.wattHours ?? 0) - 19.073) < 0.000001)
+    #expect(BatteryCapacity(wattHours: 12.7).batteryWattHours == [12.7])
+    #expect(BatteryCapacity(milliampHours: 3274).batteryWattHours.isEmpty)
+    #expect(BatteryCapacity().batteryWattHours.isEmpty)
+
+    let aggregate = BatteryCapacity(batteryMilliampHours: [2962, 1921], wattHours: 19.073)
+    #expect(aggregate.batteryWattHours.isEmpty)
+    #expect(aggregate.wattHours == 19.073)
+    #expect(aggregate.batteryCount == 2)
 }

@@ -886,7 +886,7 @@ extension Device {
             waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "6.0",
             // 11.567 Wh + 7.506 Wh: https://youtu.be/ZDXOxRLZRQo
-            batteryCapacity: .init(batteryMilliampHours: [2962, 1921], wattHours: 19.073),
+            batteryCapacity: .init(batteryMilliampHours: [2962, 1921], batteryWattHours: [11.567, 7.506]),
             eSIMOnlyModelNumbers: ["A3447", "A3719", "A3720", "A3721"]
         )
     ]
