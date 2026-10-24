@@ -10,7 +10,6 @@ extension Device {
             modelNumbers: ["A1203"],
             displays: [.init(role: .primary, diagonal: 3.5, resolution: .init(width: 320, height: 480), ppi: 163)],
             dockConnector: .thirtyPin,
-            // Bluetooth details and battery capacity: https://www.gsmarena.com/apple_iphone-1827.php
             bluetoothVersion: "2.0 (headset support only)",
             batteryCapacity: .init(milliampHours: 1400),
             eSIMOnlyModelNumbers: []
@@ -24,7 +23,6 @@ extension Device {
             modelNumbers: ["A1241", "A1324"],
             displays: [.init(role: .primary, diagonal: 3.5, resolution: .init(width: 320, height: 480), ppi: 163)],
             dockConnector: .thirtyPin,
-            // Bluetooth details and battery capacity: https://www.gsmarena.com/apple_iphone_3g-2424.php
             bluetoothVersion: "2.0, A2DP (headset support only)",
             batteryCapacity: .init(milliampHours: 1220),
             eSIMOnlyModelNumbers: []
@@ -38,7 +36,6 @@ extension Device {
             modelNumbers: ["A1303", "A1325"],
             displays: [.init(role: .primary, diagonal: 3.5, resolution: .init(width: 320, height: 480), ppi: 163)],
             dockConnector: .thirtyPin,
-            // Bluetooth details and battery capacity: https://www.gsmarena.com/apple_iphone_3gs-2826.php
             bluetoothVersion: "2.1, A2DP (headset support only)",
             batteryCapacity: .init(milliampHours: 1400),
             eSIMOnlyModelNumbers: []
@@ -896,7 +893,6 @@ extension Device {
             waterResistance: "IP68 (IEC 60529)",
             waterResistanceDescription: "Up to 30 minutes and 6m deep",
             bluetoothVersion: "6.0",
-            // 11.567 Wh + 7.506 Wh: https://youtu.be/ZDXOxRLZRQo
             batteryCapacity: .init(batteryMilliampHours: [2962, 1921], batteryWattHours: [11.567, 7.506]),
             eSIMOnlyModelNumbers: ["A3447", "A3719", "A3720", "A3721"]
         )

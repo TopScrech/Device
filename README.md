@@ -42,7 +42,6 @@ Browse definitions using `Device.iPhones`, `Device.iPads`, `Device.iPods`, `Devi
 
 Bluetooth values were migrated from Device Specs' custom mapping, with iPhone Duo set to `"6.0"` — missing mappings return `nil`
 
-The original mapping cites [EveryMac](https://everymac.com/systems/apple/iphone/iphone-faq/iphone-bluetooth-support-by-model.html) and [Apple's iPhone comparison](https://apple.com/iphone/compare)
 
 Capabilities include `.magSafe`, `.wirelessCharging`, `.fiveG` and `.dynamicIsland`
 
@@ -55,9 +54,8 @@ Wi-Fi-only iPads and GPS-only watches do not receive this capability
 `DeviceDefinition.capabilities` contains the common base set; `capabilityOverrides` supplies complete sets for specific hardware identifiers or A-models
 Use `Device.capabilities` or `has(_:)` for the resolved variant, including `Device(modelNumber:)` and `withModelNumber(_:)`
 
-The [capability audit](Documentation/Capabilities.md) records the results and at least two source links for each of the 150 model definitions, plus cellular variant evidence and the corrected Apple Watch SE 3 size mapping
+The [capability audit](Documentation/capabilities/evidence/Audit.md) records the results and at least two source links for each of the 150 model definitions, plus cellular variant evidence and the corrected Apple Watch SE 3 size mapping
 
-Model capabilities are maintained directly in Swift, informed by [DeviceKit](https://github.com/devicekit/DeviceKit) and [Device](https://github.com/kudit/Device)
 
 Unknown identifiers are preserved and return an empty capability set, so `has` reports known support rather than guessing capabilities for future devices
 
@@ -97,11 +95,8 @@ Unknown A-models and A-models belonging to a different device return no definiti
 
 Battery values were migrated as supplied from Device Specs, including its existing mAh/Wh values — this migration is not an independent accuracy audit of those values
 
-Duo's eSIM-only configuration and two battery capacities were supplied by the project owner — the supplied screenshots show 2962 mAh / 11.567 Wh and 1921 mAh / 7.506 Wh, totaling 4883 mAh / 19.073 Wh, with [this video](https://youtu.be/ZDXOxRLZRQo) supplied as the source — missing capacity data remains `nil`, including models without a built-in battery
 
-A-model data was cross-referenced from [kudit/Device's model catalogue](https://github.com/kudit/Device/tree/main/Sources/Models) and Apple's model guides for [iPhone](https://support.apple.com/en-us/108044), [iPad](https://support.apple.com/en-us/108043), [Watch](https://support.apple.com/en-us/108056) and [iPod](https://support.apple.com/en-us/103823)
 
-SIM configurations use Apple's iPhone model guide — eSIM-only does not automatically imply a larger battery, and only explicitly mapped higher capacities are selected
 
 ## Validation
 
@@ -127,7 +122,7 @@ Device.current.cpu?.l3Cache
 
 Every catalogued device has a CPU mapping, available through hardware identifiers or A-model numbers on any platform — unknown devices return `nil`
 
-Specifications are optional display strings migrated from Device Specs, retaining its units, ranges, estimates and source comments — this is not an independent accuracy audit
+Specifications are optional display strings migrated from Device Specs, retaining its units, ranges and estimates — this is not an independent accuracy audit
 
 Empty values, placeholders and cache entries explicitly marked as uncertain (`???`) return `nil` — the cache fields represent L1 data, L1 instruction, L2 and L3, not four cache levels
 
@@ -135,7 +130,6 @@ Base M-series chips expose their base Neural Engine and clock values without the
 
 The CPU enum includes Mac and accessory chips, but this does not add Mac or AirPods device definitions
 
-CPU identities were adapted from [kudit/Device](https://github.com/kudit/Device) and display names from [DeviceKit](https://github.com/devicekit/DeviceKit), with changes to naming, optional unknown values and platform-independent availability — upstream license notices are in `Licenses`
 
 ## Water resistance
 
@@ -148,7 +142,7 @@ Both properties are optional catalogue strings, also available on `DeviceDefinit
 
 Values and wording were migrated unchanged from Device Specs, including the existing iPhone 16e inconsistency (IP68 rating with a `"None"` description) — this migration is not an independent accuracy audit
 
-iPhone Duo adds a verified IP68 rating and a 6-meter, 30-minute description, with [two source documents](Documentation/WaterResistance.md) supporting both fields
+iPhone Duo adds a verified IP68 rating and a 6-meter, 30-minute description, with [two source documents](Documentation/water-resistance/evidence/Audit.md) supporting both fields
 
 Other models absent from those mappings remain unmapped — simulator lookup uses its simulated model through `Device.current`, and A-model lookup shares the same specifications
 
@@ -160,7 +154,6 @@ Values were migrated unchanged from Device Specs, preserving units, fractional p
 
 This migration is not an independent accuracy audit
 
-iPhone Duo stores a derived nominal voltage of `3.91 V`, supplied by the project owner using `(11.567 + 7.506) * 1000 / (2962 + 1921) ≈ 3.906 V`, rounded to two decimals — the battery energy and capacity values come from the supplied screenshots with [this video](https://youtu.be/ZDXOxRLZRQo) as the source
 
 ## Announcement and release dates
 
@@ -173,7 +166,7 @@ iPhone Duo stores a derived nominal voltage of `3.91 V`, supplied by the project
 
 The date audit checked all 150 catalogue definitions against Apple and a second source on 2026-10-19
 All have announcement dates; exact release dates remain unknown for iPad mini 4 and iPod touch (7th generation), rather than reusing their order dates
-See [iPhone evidence](Documentation/iPhoneDates.md), [iPad evidence](Documentation/iPadDates.md), [Apple Watch evidence](Documentation/AppleWatchDates.md) and [iPod touch, Apple TV and HomePod evidence](Documentation/OtherDeviceDates.md) for per-model dates, source links and exceptions
+See [iPhone evidence](Documentation/dates/evidence/iPhoneDates.md), [iPad evidence](Documentation/dates/evidence/iPadDates.md), [Apple Watch evidence](Documentation/dates/evidence/AppleWatchDates.md) and [iPod touch, Apple TV and HomePod evidence](Documentation/dates/evidence/OtherDeviceDates.md) for per-model dates, source links and exceptions
 
 `DeviceDate` validates Gregorian components at initialization and supports chronological comparison
 When displaying it with Foundation, use the same explicit Gregorian calendar and time zone for both conversion and formatting so the displayed day cannot shift
@@ -195,4 +188,8 @@ device.display?.estimatedDiagonal // Derived from pixels and PPI
 All 150 catalogued definitions have an explicit display classification and audited LiDAR/rounded-corner capabilities
 Folding devices preserve separate inner and outer panels; `display` returns the first panel rather than guessing which is active
 The app must query live platform APIs separately for brightness and connected monitors
-See the [display audit](Documentation/Displays.md) and [per-specification source records](Documentation/DisplayEvidence.json) for two or more sources per field, derived values, and source disagreements
+See the [display audit](Documentation/display/evidence/Audit.md) and [per-specification source records](Documentation/display/Evidence.json) for two or more sources per field, derived values, and source disagreements
+
+## Specification documentation
+
+See [Documentation](Documentation/README.md) for one human-readable file per specification, with model/chip values, recorded references and evidence gaps

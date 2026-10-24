@@ -19,8 +19,6 @@ extension Device {
             modelNumbers: ["A1288", "A1319"],
             displays: [.init(role: .primary, diagonal: 3.5, resolution: .init(width: 320, height: 480), ppi: 163)],
             dockConnector: .thirtyPin,
-            // Owner report: https://www.ifixit.com/Answers/View/10159
-            // Software enablement: https://www.ifixit.com/News/14173/ipod-touch-3rd-gen-wheres-the-camera
             bluetoothVersion: "2.1 + EDR (requires iPhone OS 3.0 or later)"
         ),
         .init(
@@ -32,10 +30,7 @@ extension Device {
             modelNumbers: ["A1318"],
             displays: [.init(role: .primary, diagonal: 3.5, resolution: .init(width: 320, height: 480), ppi: 163)],
             dockConnector: .thirtyPin,
-            // https://support.apple.com/en-us/112461
             bluetoothVersion: "2.1 + EDR",
-            // https://www.ifixit.com/Teardown/iPod+Touch+3rd+Generation+Teardown/1158
-            // iFixit derives 789 mAh from the original battery label
             batteryCapacity: .init(milliampHours: 789, wattHours: 2.92)
         ),
         .init(
@@ -47,10 +42,7 @@ extension Device {
             modelNumbers: ["A1367"],
             displays: [.init(role: .primary, diagonal: 3.5, resolution: .init(width: 640, height: 960), ppi: 326)],
             dockConnector: .thirtyPin,
-            // https://support.apple.com/en-us/112431
             bluetoothVersion: "2.1 + EDR",
-            // https://www.ifixit.com/Teardown/iPod+Touch+4th+Generation+Teardown/3562
-            // 930 mAh corroborated by https://www.ifixit.com/News/3498/ipod-touch-5th-generation-teardown
             batteryCapacity: .init(milliampHours: 930, wattHours: 3.44)
         ),
         .init(

@@ -20,7 +20,7 @@ This covers the existing six-family catalogue, not an expansion into uncatalogue
 
 ## Evidence
 
-[DisplayEvidence.json](DisplayEvidence.json) records source references separately for **every specification of every model**, including derived aspect ratios, estimated diagonals, and explicit absence findings
+[DisplayEvidence.json](../Evidence.json) records source references separately for **every specification of every model**, including derived aspect ratios, estimated diagonals, and explicit absence findings
 Each field has at least two source references; model-to-screen mappings and shared screen constants are cross-referenced together
 Apple technical specifications, Apple comparison tables and announcements were checked against the two pinned library catalogues, with firsthand hardware reviews and scanning-app compatibility filling gaps and resolving disagreements
 The two libraries share some upstream data, and multiple Apple sources share a publisher; these are multiple sources, not a claim of independent laboratory measurement

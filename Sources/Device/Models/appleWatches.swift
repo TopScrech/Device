@@ -418,7 +418,6 @@ extension Device {
             capabilities: [.wirelessCharging, .fiveG, .roundedDisplayCorners],
             displays: [.init(role: .primary, diagonal: nil, resolution: .init(width: 422, height: 514), ppi: 326)],
             dockConnector: .none,
-            // iFixit teardown battery values supplied by the user: https://youtu.be/c1duzuXz7D0
             voltage: "3.873 V",
             waterResistance: "IP6X, ISO 22810:2010, EN13319",
             waterResistanceDescription: "Up to 100m deep",
@@ -559,7 +558,6 @@ extension Device {
             ],
             displays: [.init(role: .primary, diagonal: nil, resolution: .init(width: 416, height: 496), ppi: 326)],
             dockConnector: .none,
-            // iFixit teardown battery values supplied by the user: https://youtu.be/c1duzuXz7D0
             voltage: "3.875 V",
             waterResistance: "IP6X",
             waterResistanceDescription: "Up to 50m deep",

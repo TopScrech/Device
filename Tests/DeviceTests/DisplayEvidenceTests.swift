@@ -8,9 +8,10 @@ func displayEvidenceCoversEveryModelAndEverySpecification() throws {
         .deletingLastPathComponent()
         .deletingLastPathComponent()
         .deletingLastPathComponent()
-    let data = try Data(contentsOf: package.appending(path: "Documentation/DisplayEvidence.json"))
+    let data = try Data(contentsOf: package.appending(path: "Documentation/display/Evidence.json"))
     let document = try #require(JSONSerialization.jsonObject(with: data) as? [String: Any])
     let records = try #require(document["devices"] as? [[String: Any]])
+    let publisherGroups = try #require(document["publisherGroups"] as? [String: String])
     #expect(records.count == Device.all.count)
     #expect(Set(records.compactMap { $0["name"] as? String }) == Set(Device.all.map(\.name)))
 
@@ -28,8 +29,8 @@ func displayEvidenceCoversEveryModelAndEverySpecification() throws {
             let urls = try sources.map { try #require(references[$0]) }
             #expect(Set(urls).count >= 2, "\(definition.name): \(field) needs two sources")
             // Model mappings and screen constants from one library count as one source
-            let publications = urls.map {
-                $0.hasPrefix("https://github.com/kudit/Device/") ? "kudit/Device" : $0
+            let publications = urls.map { url in
+                publisherGroups.first { url.hasPrefix($0.key) }?.value ?? url
             }
             #expect(Set(publications).count >= 2)
             #expect(urls.allSatisfy { URL(string: $0)?.scheme == "https" })

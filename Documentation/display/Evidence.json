@@ -2949,7 +2949,7 @@
         ]
       },
       "notes": [
-        "Rejected the comparison catalogue Retina mapping; Apple and the additional hardware review both specify 320 \u00d7 480 at 163 PPI"
+        "Rejected the comparison catalogue Retina mapping; Apple and the additional hardware review both specify 320 × 480 at 163 PPI"
       ]
     },
     {
@@ -3008,7 +3008,7 @@
         ]
       },
       "notes": [
-        "Rejected the comparison catalogue Retina mapping; Apple and the additional hardware review both specify 320 \u00d7 480 at 163 PPI"
+        "Rejected the comparison catalogue Retina mapping; Apple and the additional hardware review both specify 320 × 480 at 163 PPI"
       ]
     },
     {
@@ -3312,7 +3312,7 @@
         ]
       },
       "notes": [
-        "Rejected the comparison catalogue Retina mapping; Apple and the additional hardware review both specify 320 \u00d7 480 at 163 PPI"
+        "Rejected the comparison catalogue Retina mapping; Apple and the additional hardware review both specify 320 × 480 at 163 PPI"
       ]
     },
     {
@@ -3373,7 +3373,7 @@
         ]
       },
       "notes": [
-        "Rejected the comparison catalogue Retina mapping; Apple and the additional hardware review both specify 320 \u00d7 480 at 163 PPI"
+        "Rejected the comparison catalogue Retina mapping; Apple and the additional hardware review both specify 320 × 480 at 163 PPI"
       ]
     },
     {
@@ -3434,7 +3434,7 @@
         ]
       },
       "notes": [
-        "Rejected the comparison catalogue Retina mapping; Apple and the additional hardware review both specify 320 \u00d7 480 at 163 PPI"
+        "Rejected the comparison catalogue Retina mapping; Apple and the additional hardware review both specify 320 × 480 at 163 PPI"
       ]
     },
     {
@@ -9176,7 +9176,7 @@
       },
       "notes": [
         "Used Apple rectangular diagonal footnote instead of the rounded model name",
-        "Apple specifications and comparison table agree on 1668 \u00d7 2420; rejected older 1668 \u00d7 2388 comparison-library mapping"
+        "Apple specifications and comparison table agree on 1668 × 2420; rejected older 1668 × 2388 comparison-library mapping"
       ]
     },
     {
@@ -9561,7 +9561,7 @@
       },
       "notes": [
         "Used Apple rectangular diagonal footnote instead of the rounded model name",
-        "Apple specifications and comparison table agree on 1668 \u00d7 2420; rejected older 1668 \u00d7 2388 comparison-library mapping"
+        "Apple specifications and comparison table agree on 1668 × 2420; rejected older 1668 × 2388 comparison-library mapping"
       ]
     },
     {
@@ -9757,5 +9757,8 @@
       },
       "notes": []
     }
-  ]
+  ],
+  "publisherGroups": {
+    "https://github.com/kudit/Device/": "kudit/Device"
+  }
 }

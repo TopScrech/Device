@@ -1,7 +1,3 @@
-// Sources
-// https://lowendmac.com
-// https://apple.fandom.com
-
 extension CPU {
     public var neuralEngineTOPS: String? {
         switch self {
@@ -12,10 +8,10 @@ extension CPU {
         case .a13Bionic: "6"
         case .a14Bionic: "11"
         case .a15Bionic: "15.8"
-        case .a16Bionic: "17" // https://apple.fandom.com/wiki/Apple_A16
+        case .a16Bionic: "17"
         case .a17Pro, .a18, .a18Pro: "35"
-        case .a19: "35" // https://lowendmac.com/2025/apple-a19-specs
-        case .a19Pro: "35" // https://lowendmac.com/2025/apple-a19-pro-specs
+        case .a19: "35"
+        case .a19Pro: "35"
         case .a20Pro: nil
             
         case .m1: "11"
@@ -37,11 +33,11 @@ extension CPU {
         case .a12Bionic, .a12XBionic,
                 .a12ZBionic, .a13Bionic: "8"
         case .a14Bionic, .a15Bionic: "16"
-        case .a16Bionic: "16" // https://apple.fandom.com/wiki/Apple_A16
+        case .a16Bionic: "16"
         case .a17Pro, .a18, .a18Pro: "16"
             
-        case .a19: "16" // https://lowendmac.com/2025/apple-a19-specs
-        case .a19Pro: "16" // https://lowendmac.com/2025/apple-a19-pro-specs
+        case .a19: "16"
+        case .a19Pro: "16"
         case .a20Pro: "32" // Dual 16-core arch
             
         case .m1, .m2, .m3: "16"

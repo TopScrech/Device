@@ -9,7 +9,6 @@ extension Device {
             modelNumbers: ["A1219", "A1337"],
             displays: [.init(role: .primary, diagonal: 9.7, resolution: .init(width: 768, height: 1024), ppi: 132)],
             dockConnector: .thirtyPin,
-            // Bluetooth details and battery capacity: https://www.gsmarena.com/apple_ipad_wi_fi-3828.php
             bluetoothVersion: "2.1, A2DP, EDR",
             batteryCapacity: .init(milliampHours: 6600, wattHours: 24.8)
         ),
