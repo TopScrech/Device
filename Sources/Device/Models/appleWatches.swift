@@ -418,9 +418,12 @@ extension Device {
             capabilities: [.wirelessCharging, .fiveG, .roundedDisplayCorners],
             displays: [.init(role: .primary, diagonal: nil, resolution: .init(width: 422, height: 514), ppi: 326)],
             dockConnector: .none,
+            // iFixit teardown battery values supplied by the user: https://youtu.be/c1duzuXz7D0
+            voltage: "3.873 V",
             waterResistance: "IP6X, ISO 22810:2010, EN13319",
             waterResistanceDescription: "Up to 100m deep",
-            bluetoothVersion: "5.3"
+            bluetoothVersion: "5.3",
+            batteryCapacity: .init(milliampHours: 631, wattHours: 2.444)
         ),
         .init(
             name: "Apple Watch Series 9 41mm",
@@ -555,8 +558,11 @@ extension Device {
             ],
             displays: [.init(role: .primary, diagonal: nil, resolution: .init(width: 416, height: 496), ppi: 326)],
             dockConnector: .none,
+            // iFixit teardown battery values supplied by the user: https://youtu.be/c1duzuXz7D0
+            voltage: "3.875 V",
             waterResistanceDescription: "Up to 50m deep",
-            bluetoothVersion: "5.3"
+            bluetoothVersion: "5.3",
+            batteryCapacity: .init(milliampHours: 377, wattHours: 1.461)
         ),
         .init(
             name: "Apple Watch SE (3rd generation) 40mm",
