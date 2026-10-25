@@ -36,7 +36,7 @@ extension CPU {
         case .a19: "3 nm (N3P)"
         case .a19Pro: "3 nm (N3P)"
             
-        case .a20Pro: "2 nm"
+        case .a20Pro: "2 nm (N2)"
             
         case .m1: "5 nm (N5)"
         case .m2: "5 nm (N5P)"
@@ -58,7 +58,7 @@ extension CPU {
             
         case .s10: "4 nm (N4)"
             
-        case .s11: "2 nm"
+        case .s11: "2 nm (N2)"
         default: nil
         }
     }

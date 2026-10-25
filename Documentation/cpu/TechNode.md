@@ -64,7 +64,7 @@ File-level references are preserved without claiming they establish every chip v
 | A18 Pro | 3 nm (N3E) | [phonedb.net 1](https://phonedb.net/index.php?m=processor&id=991&c=apple_a18_pro_apl1v07_t8140__tahiti) |  |
 | A19 | 3 nm (N3P) | No chip-specific citation recorded |  |
 | A19 Pro | 3 nm (N3P) | No chip-specific citation recorded |  |
-| A20 Pro | 2 nm | [nanoreview.net 1](https://nanoreview.net/en/soc/apple-a20-pro) |  |
+| A20 Pro | 2 nm (N2) | [TechInsights](https://www.techinsights.com/blog/apple-a20-pro-tsmc-2nm-processor-analysis), [nanoreview.net 1](https://nanoreview.net/en/soc/apple-a20-pro) | TechInsights identifies TSMC's N2 process |
 | Intel Pentium M (1GHz) | Not catalogued | No recorded source | Not mapped or not applicable; nil does not distinguish these states |
 | A8 | 20 nm | [phonedb.net 1](https://phonedb.net/index.php?m=processor&id=531&c=apple_a8_apl1011_t7000__fiji) |  |
 | A10X Fusion | 10 nm | [phonedb.net 1](https://phonedb.net/index.php?m=processor&id=719&c=apple_a10x_fusion_apl1071_t8011__myst) |  |
@@ -80,4 +80,4 @@ File-level references are preserved without claiming they establish every chip v
 | S8 | 7 nm (N7P) | [phonedb.net 1](https://phonedb.net/index.php?m=processor&id=907&c=apple_s8_t8301) |  |
 | S9 | 5 nm (N5P) | [phonedb.net 1](https://phonedb.net/index.php?m=processor&id=996&c=apple_s9_apl1w15_t8310) |  |
 | S10 | 4 nm (N4) | [phonedb.net 1](https://phonedb.net/index.php?m=processor&id=997&c=apple_s10_apl1w15_t8310)<br>[en.wikipedia.org 2](https://en.wikipedia.org/wiki/Apple_silicon#Apple_S3) | 4nm:; 4nm N4: |
-| S11 | 2 nm | No chip-specific citation recorded | no source, Apple states "based on A20" (which is 2nm) |
+| S11 | 2 nm (N2) | No chip-specific citation recorded | Inferred from its reported A20 basis and the A20 Pro N2 process documented above; not independently verified for S11 |
