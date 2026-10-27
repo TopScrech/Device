@@ -160,3 +160,4 @@ These references document provenance of the mapping, not a fresh verification of
 | HomePod | Not catalogued | Mapping-level references only; no row-specific citation recorded |
 | HomePod mini | Not catalogued | Mapping-level references only; no row-specific citation recorded |
 | HomePod (2nd generation) | Not catalogued | Mapping-level references only; no row-specific citation recorded |
+| iPad mini (A20 Pro) | A3596; A3597 | [Apple](https://www.apple.com/ie/ipad-mini/specs/), [Apple networks](https://images.apple.com/uk/ipad/cellular/networks/); Wi-Fi A3595 has no cellular modem |

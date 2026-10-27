@@ -160,3 +160,4 @@ These references document provenance of the mapping, not a fresh verification of
 | HomePod | A8 | Mapping-level references only; no row-specific citation recorded |
 | HomePod mini | S5 | Mapping-level references only; no row-specific citation recorded |
 | HomePod (2nd generation) | S7 | Mapping-level references only; no row-specific citation recorded |
+| iPad mini (A20 Pro) | A20 Pro | [Apple](https://www.apple.com/ie/ipad-mini/specs/) |

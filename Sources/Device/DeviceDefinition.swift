@@ -20,6 +20,8 @@ public struct DeviceDefinition: Hashable, Sendable {
     /// Bluetooth specification version from the model catalogue, not a live connection
     public let bluetoothVersion: String?
     public let cpu: CPU?
+    /// Neural Engine cores by nominal storage capacity in GB
+    public let neuralEngineCoresByStorage: [Int: Int]
     /// Nominal catalogue voltage text, not a live reading
     public let voltage: String?
     /// Built-in pixel displays, empty when inapplicable and nil when not catalogued
@@ -48,12 +50,15 @@ public struct DeviceDefinition: Hashable, Sendable {
         batteryCapacity: BatteryCapacity? = nil,
         eSIMOnlyBatteryCapacity: BatteryCapacity? = nil,
         eSIMOnlyModelNumbers: Set<String>? = nil,
-        batteryCapacityOverrides: [String: BatteryCapacity] = [:]
+        batteryCapacityOverrides: [String: BatteryCapacity] = [:],
+        neuralEngineCoresByStorage: [Int: Int] = [:]
     ) {
         self.waterResistance = waterResistance
         self.waterResistanceDescription = waterResistanceDescription
         self.voltage = voltage
+        precondition(neuralEngineCoresByStorage.allSatisfy { $0.key > 0 && $0.value > 0 })
         self.cpu = cpu
+        self.neuralEngineCoresByStorage = neuralEngineCoresByStorage
         self.modelNumbers = modelNumbers
         self.batteryCapacity = batteryCapacity
         self.eSIMOnlyBatteryCapacity = eSIMOnlyBatteryCapacity
@@ -92,8 +97,17 @@ public struct DeviceDefinition: Hashable, Sendable {
 
         // A hardware identifier may cover multiple A-models with different batteries
         let capacities = modelNumbers.map { batteryCapacity(for: $0) }
-        guard let first = capacities.first,
-              capacities.allSatisfy({ $0 == first }) else { return nil }
-        return first
+        guard let first = capacities.first else { return nil }
+        if capacities.allSatisfy({ $0 == first }) { return first }
+
+        // Keep a shared published unit when only the other unit is unknown or differs
+        let milliampHours = first?.milliampHours.flatMap { value in
+            capacities.allSatisfy { $0?.milliampHours == value } ? value : nil
+        }
+        let wattHours = first?.wattHours.flatMap { value in
+            capacities.allSatisfy { $0?.wattHours == value } ? value : nil
+        }
+        guard milliampHours != nil || wattHours != nil else { return nil }
+        return .init(milliampHours: milliampHours, wattHours: wattHours)
     }
 }

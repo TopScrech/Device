@@ -162,3 +162,4 @@ See [original audit](evidence/Audit.md) for the iPhone Duo evidence
 | HomePod | None | No recorded source | Migrated mapping; no model-specific citation recorded |
 | HomePod mini | None | No recorded source | Project-owner supplied; no external citation recorded for this field |
 | HomePod (2nd generation) | None | No recorded source | Project-owner supplied; no external citation recorded for this field |
+| iPad mini (A20 Pro) | Dust tight; up to 30 minutes and 1 meter deep | [Apple](https://www.apple.com/ie/ipad-mini/specs/) | Laboratory rating; resistance can decrease with wear |

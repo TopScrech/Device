@@ -162,3 +162,4 @@ See [original audit](evidence/Audit.md) for the iPhone Duo evidence
 | HomePod | None | No recorded source | Migrated mapping; no model-specific citation recorded |
 | HomePod mini | None | No recorded source | Project-owner supplied; no external citation recorded for this field |
 | HomePod (2nd generation) | None | No recorded source | Project-owner supplied; no external citation recorded for this field |
+| iPad mini (A20 Pro) | IP67 (IEC 60529) | [Apple](https://www.apple.com/ie/ipad-mini/specs/) | First catalogued iPad with water and dust resistance |

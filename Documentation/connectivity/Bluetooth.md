@@ -160,3 +160,4 @@ Original mapping-level references (not model-specific verification): [everymac.c
 | HomePod | 5.0 | No recorded source | Migrated mapping; no model-specific citation recorded |
 | HomePod mini | 5.0 | No recorded source | Migrated mapping; no model-specific citation recorded |
 | HomePod (2nd generation) | 5.0 | No recorded source | Migrated mapping; no model-specific citation recorded |
+| iPad mini (A20 Pro) | 6.0 | [Apple](https://www.apple.com/ie/ipad-mini/specs/) |  |

@@ -160,3 +160,4 @@ These references document provenance of the mapping, not a fresh verification of
 | HomePod | none | No recorded source |
 | HomePod mini | none | No recorded source |
 | HomePod (2nd generation) | none | No recorded source |
+| iPad mini (A20 Pro) | USB-C | [Apple](https://www.apple.com/ie/ipad-mini/specs/) |

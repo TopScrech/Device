@@ -4,7 +4,7 @@ One human-readable page per specification, grouped by category
 
 Reorganized on 2026-10-24 from existing inline citations, README provenance, and documentation; no new external verification was performed
 
-Per-spec tables cover all 150 catalogued device models, or all 71 CPU cases for chip-level properties; historical audits retain their original scope
+Per-spec tables cover all 151 catalogued device models, or all 71 CPU cases for chip-level properties; historical audits retain their original scope
 Missing citations are marked explicitly; a general mapping source is not presented as model-specific evidence
 
 ## Battery
@@ -39,6 +39,7 @@ Missing citations are marked explicitly; a general mapping source is not present
 - [Maximum clock speed](cpu/MaxClockSpeed.md)
 - [Memory type](cpu/MemoryType.md)
 - [Neural Engine core count](cpu/NeuralEngineCores.md)
+- [Device Neural Engine configurations](cpu/NeuralEngineConfigurations.md)
 - [Neural Engine throughput](cpu/NeuralEngineTOPS.md)
 - [Manufacturing process](cpu/TechNode.md)
 

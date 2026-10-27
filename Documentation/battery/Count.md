@@ -169,3 +169,4 @@ A single-battery default is an API representation, not independent teardown evid
 | HomePod | Base | No capacity record | [Capacity and provenance](Capacity.md), [energy and provenance](Energy.md) |
 | HomePod mini | Base | No capacity record | [Capacity and provenance](Capacity.md), [energy and provenance](Energy.md) |
 | HomePod (2nd generation) | Base | No capacity record | [Capacity and provenance](Capacity.md), [energy and provenance](Energy.md) |
+| iPad mini (A20 Pro) | All models | 1 (catalogue default) | [Apple](https://www.apple.com/ie/ipad-mini/specs/); Physical cell count not independently established; do not treat as teardown evidence |

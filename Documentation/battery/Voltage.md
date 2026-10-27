@@ -156,3 +156,4 @@ This reorganizes existing evidence, without a new accuracy audit or changes to r
 | HomePod | Not catalogued | No recorded source |  |
 | HomePod mini | Not catalogued | No recorded source |  |
 | HomePod (2nd generation) | Not catalogued | No recorded source |  |
+| iPad mini (A20 Pro) | Not catalogued | No verified nominal voltage | Not inferred from Wh / Ah |

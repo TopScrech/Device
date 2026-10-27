@@ -171,3 +171,6 @@ Missing values remain unknown, and screenless mains-powered devices have no buil
 | HomePod | Base | Not catalogued | No recorded source for this unit |  |
 | HomePod mini | Base | Not catalogued | No recorded source for this unit |  |
 | HomePod (2nd generation) | Base | Not catalogued | No recorded source for this unit |  |
+| iPad mini (A20 Pro) | All models | 18.9 Wh | [Apple](https://www.apple.com/ie/ipad-mini/specs/) | Published for all models |
+
+When regional records differ only in mAh availability, lookup without an A-model retains shared published Wh while leaving mAh unknown

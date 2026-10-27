@@ -160,3 +160,4 @@ These references document provenance of the mapping, not a fresh verification of
 | HomePod | AudioAccessory1,1, AudioAccessory1,2 | Mapping-level references only; no row-specific citation recorded |
 | HomePod mini | AudioAccessory5,1, AudioAccessorySingle5,1 | Mapping-level references only; no row-specific citation recorded |
 | HomePod (2nd generation) | AudioAccessory6,1 | Mapping-level references only; no row-specific citation recorded |
+| iPad mini (A20 Pro) | iPad19,1; iPad19,2 | [The Apple Wiki](https://theapplewiki.com/wiki/IPad_mini_(A20_Pro)); Wi-Fi; Wi-Fi + Cellular respectively |

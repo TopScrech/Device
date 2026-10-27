@@ -784,6 +784,32 @@ extension Device {
             waterResistanceDescription: "None",
             bluetoothVersion: "6.0",
             batteryCapacity: .init(milliampHours: 9705, wattHours: 36.59)
+        ),
+        .init(
+            name: "iPad mini (A20 Pro)",
+            identifiers: ["iPad19,1", "iPad19,2"],
+            announcementDate: .init(year: 2026, month: 10, day: 26),
+            releaseDate: .init(year: 2026, month: 11, day: 6),
+            cpu: .a20Pro,
+            modelNumbers: ["A3595", "A3596", "A3597"],
+            capabilities: [.roundedDisplayCorners],
+            capabilityOverrides: [
+                "iPad19,2": [.fiveG, .roundedDisplayCorners],
+                "A3596": [.fiveG, .roundedDisplayCorners],
+                "A3597": [.fiveG, .roundedDisplayCorners]
+            ],
+            displays: [.init(role: .primary, diagonal: 8.5, resolution: .init(width: 1512, height: 2316), ppi: 326)],
+            dockConnector: .usbC,
+            waterResistance: "IP67 (IEC 60529)",
+            waterResistanceDescription: "Dust tight; up to 30 minutes and 1 meter deep",
+            bluetoothVersion: "6.0",
+            batteryCapacity: .init(wattHours: 18.9),
+            eSIMOnlyModelNumbers: ["A3596", "A3597"],
+            batteryCapacityOverrides: [
+                "A3595": .init(milliampHours: 4900, wattHours: 18.9),
+                "A3596": .init(milliampHours: 4900, wattHours: 18.9)
+            ],
+            neuralEngineCoresByStorage: [128: 16, 256: 16, 512: 32]
         )
     ]
 }

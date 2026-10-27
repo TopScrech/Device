@@ -38,7 +38,7 @@ extension CPU {
             
         case .a19: "16"
         case .a19Pro: "16"
-        case .a20Pro: "32" // Dual 16-core arch
+        case .a20Pro: "16 or 32, depending on configuration"
             
         case .m1, .m2, .m3: "16"
         case .m4: "16"

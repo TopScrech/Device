@@ -6,6 +6,8 @@ This reorganizes existing evidence, without a new accuracy audit or changes to r
 
 Derived diagonal = √(width² + height²) / PPI; aspect ratio reduces native pixel dimensions
 
+`formattedAspectRatio` presents landscape ratios without spaces, retaining familiar ratios within 0.5% and otherwise using up to two decimal places followed by :1
+
 Sources and disagreements are preserved from the [display audit](evidence/Audit.md)
 
 | Device | Value | Recorded sources | Evidence notes |
@@ -160,3 +162,4 @@ Sources and disagreements are preserved from the [display audit](evidence/Audit.
 | iPad Pro 13-inch (M5) | 3:4 | [support.apple.com 1](https://support.apple.com/en-us/125407)<br>[github.com 2](https://github.com/kudit/Device/blob/387404b10f25acaf1e8ac3afa4f3b9acfdd1e4c7/Sources/Models/iPads.swift)<br>[github.com 3](https://github.com/kudit/Device/blob/387404b10f25acaf1e8ac3afa4f3b9acfdd1e4c7/Sources/Screen.swift) |  |
 | iPad Air 11-inch (M4) | 41:59 | [support.apple.com 1](https://support.apple.com/126471)<br>[github.com 2](https://github.com/kudit/Device/blob/387404b10f25acaf1e8ac3afa4f3b9acfdd1e4c7/Sources/Models/iPads.swift)<br>[github.com 3](https://github.com/kudit/Device/blob/387404b10f25acaf1e8ac3afa4f3b9acfdd1e4c7/Sources/Screen.swift) | Used Apple rectangular diagonal footnote instead of the rounded model name |
 | iPad Air 13-inch (M4) | 512:683 | [support.apple.com 1](https://support.apple.com/126472)<br>[github.com 2](https://github.com/kudit/Device/blob/387404b10f25acaf1e8ac3afa4f3b9acfdd1e4c7/Sources/Models/iPads.swift)<br>[github.com 3](https://github.com/kudit/Device/blob/387404b10f25acaf1e8ac3afa4f3b9acfdd1e4c7/Sources/Screen.swift) |  |
+| iPad mini (A20 Pro) | 1.53:1 | [Apple](https://www.apple.com/ie/ipad-mini/specs/) | Landscape presentation; exact pixel ratio remains 193:126 |

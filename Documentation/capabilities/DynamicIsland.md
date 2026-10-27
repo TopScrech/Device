@@ -158,3 +158,4 @@ See the [retained capability audit](evidence/Audit.md) for complete variant mapp
 | HomePod | No | [support.apple.com 1](https://support.apple.com/kb/SP773)<br>[github.com 2](https://github.com/devicekit/DeviceKit/blob/19528aa07e1426626ea9fb2c4a161edf43c4f9e8/Source/Device.swift.gyb) |  |
 | HomePod mini | No | [support.apple.com 1](https://support.apple.com/en-us/111914)<br>[apple.com 2](https://www.apple.com/newsroom/2020/10/apple-introduces-homepod-mini-a-powerful-smart-speaker-with-amazing-sound/) |  |
 | HomePod (2nd generation) | No | [support.apple.com 1](https://support.apple.com/en-us/111843)<br>[apple.com 2](https://www.apple.com/newsroom/2023/01/apple-introduces-the-new-homepod-with-breakthrough-sound-and-intelligence/) |  |
+| iPad mini (A20 Pro) | No | [Apple](https://www.apple.com/ie/ipad-mini/specs/) | Not listed in features |

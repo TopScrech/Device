@@ -160,3 +160,4 @@ These references document provenance of the mapping, not a fresh verification of
 | HomePod | A1639 | Mapping-level references only; no row-specific citation recorded |
 | HomePod mini | A2374, A2531 | Mapping-level references only; no row-specific citation recorded |
 | HomePod (2nd generation) | A2825, A2878 | Mapping-level references only; no row-specific citation recorded |
+| iPad mini (A20 Pro) | A3595; A3596; A3597 | [Apple](https://www.apple.com/ie/ipad-mini/specs/), [China eSIM](https://support.apple.com/en-bw/104991); A3597 is the China Cellular model |

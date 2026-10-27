@@ -160,3 +160,4 @@ Sources and disagreements are preserved from the [display audit](../display/evid
 | iPad Pro 13-inch (M5) | Yes | [support.apple.com 1](https://support.apple.com/en-us/125407)<br>[github.com 2](https://github.com/devicekit/DeviceKit/blob/19528aa07e1426626ea9fb2c4a161edf43c4f9e8/Source/Device.swift.gyb) |  |
 | iPad Air 11-inch (M4) | No | [support.apple.com 1](https://support.apple.com/126471)<br>[github.com 2](https://github.com/devicekit/DeviceKit/blob/19528aa07e1426626ea9fb2c4a161edf43c4f9e8/Source/Device.swift.gyb) | Used Apple rectangular diagonal footnote instead of the rounded model name |
 | iPad Air 13-inch (M4) | No | [support.apple.com 1](https://support.apple.com/126472)<br>[github.com 2](https://github.com/devicekit/DeviceKit/blob/19528aa07e1426626ea9fb2c4a161edf43c4f9e8/Source/Device.swift.gyb) |  |
+| iPad mini (A20 Pro) | No | [Apple](https://www.apple.com/ie/ipad-mini/specs/) | Not listed in camera or sensor specifications |

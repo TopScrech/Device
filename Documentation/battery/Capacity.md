@@ -171,3 +171,4 @@ Missing values remain unknown, and screenless mains-powered devices have no buil
 | HomePod | Base | Not catalogued | No recorded source for this unit |  |
 | HomePod mini | Base | Not catalogued | No recorded source for this unit |  |
 | HomePod (2nd generation) | Base | Not catalogued | No recorded source for this unit |  |
+| iPad mini (A20 Pro) | A3595 / A3596 | 4900 mAh | [Apple](https://www.apple.com/ie/ipad-mini/specs/) | EU product information sheets; A3597 mAh remains unknown |

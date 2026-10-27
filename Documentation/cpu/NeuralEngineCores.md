@@ -64,7 +64,7 @@ File-level references are preserved without claiming they establish every chip v
 | A18 Pro | 16 | No chip-specific citation recorded |  |
 | A19 | 16 | [lowendmac.com 1](https://lowendmac.com/2025/apple-a19-specs) |  |
 | A19 Pro | 16 | [lowendmac.com 1](https://lowendmac.com/2025/apple-a19-pro-specs) |  |
-| A20 Pro | 32 | No chip-specific citation recorded | Dual 16-core arch |
+| A20 Pro | 16 or 32, depending on configuration | [Apple](https://www.apple.com/ie/ipad-mini/specs/) | iPad mini: 128/256 GB have 16; 512 GB has dual 16-core engines |
 | Intel Pentium M (1GHz) | Not catalogued | No recorded source | Not mapped or not applicable; nil does not distinguish these states |
 | A8 | Not catalogued | No recorded source | Not mapped or not applicable; nil does not distinguish these states |
 | A10X Fusion | Not catalogued | No recorded source | Not mapped or not applicable; nil does not distinguish these states |

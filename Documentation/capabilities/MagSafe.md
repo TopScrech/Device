@@ -160,3 +160,4 @@ These references document provenance of the mapping, not a fresh verification of
 | HomePod | No | No recorded source |
 | HomePod mini | No | No recorded source |
 | HomePod (2nd generation) | No | No recorded source |
+| iPad mini (A20 Pro) | No | [Apple](https://www.apple.com/ie/ipad-mini/specs/); Pencil magnetic attachment is not MagSafe charging |

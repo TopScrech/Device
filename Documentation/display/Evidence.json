@@ -9756,6 +9756,66 @@
         ]
       },
       "notes": []
+    },
+    {
+      "name": "iPad mini (A20 Pro)",
+      "identifiers": [
+        "iPad19,1",
+        "iPad19,2"
+      ],
+      "modelNumbers": [
+        "A3595",
+        "A3596",
+        "A3597"
+      ],
+      "displays": [
+        {
+          "width": 1512,
+          "height": 2316,
+          "ppi": 326,
+          "diagonal": 8.5
+        }
+      ],
+      "roundedDisplayCorners": true,
+      "lidar": false,
+      "references": {
+        "appleSpecs": "https://www.apple.com/ie/ipad-mini/specs/",
+        "appleWiki": "https://theapplewiki.com/wiki/IPad_mini_(A20_Pro)"
+      },
+      "evidence": {
+        "displayClassification": [
+          "appleSpecs",
+          "appleWiki"
+        ],
+        "resolution": [
+          "appleSpecs",
+          "appleWiki"
+        ],
+        "diagonal": [
+          "appleSpecs",
+          "appleWiki"
+        ],
+        "ppi": [
+          "appleSpecs",
+          "appleWiki"
+        ],
+        "aspectRatio": [
+          "appleSpecs",
+          "appleWiki"
+        ],
+        "roundedDisplayCorners": [
+          "appleSpecs",
+          "appleWiki"
+        ],
+        "lidar": [
+          "appleSpecs",
+          "appleWiki"
+        ]
+      },
+      "notes": [
+        "Added 2026-10-27; Apple is the primary source for rounded corners and the absence of listed LiDAR; Apple Wiki independently cross-checks the panel and camera inventory",
+        "1.53:1 is formatted landscape presentation, not a replacement for the exact native pixel ratio"
+      ]
     }
   ],
   "publisherGroups": {
