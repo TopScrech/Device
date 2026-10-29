@@ -25,6 +25,7 @@ Missing citations are marked explicitly; a general mapping source is not present
 ## Connectivity
 
 - [Bluetooth](connectivity/Bluetooth.md)
+- [Wi-Fi](connectivity/WiFi.md)
 - [Dock connector](connectivity/DockConnector.md)
 - [eSIM-only models](connectivity/ESIMOnlyModelNumbers.md)
 

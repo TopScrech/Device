@@ -8,7 +8,8 @@ extension Device {
             cpu: .s5L8900,
             modelNumbers: ["A1213"],
             displays: [.init(role: .primary, diagonal: 3.5, resolution: .init(width: 320, height: 480), ppi: 163)],
-            dockConnector: .thirtyPin
+            dockConnector: .thirtyPin,
+            wifiVersion: "802.11b/g"
         ),
         .init(
             name: "iPod touch (2nd generation)",
@@ -19,6 +20,7 @@ extension Device {
             modelNumbers: ["A1288", "A1319"],
             displays: [.init(role: .primary, diagonal: 3.5, resolution: .init(width: 320, height: 480), ppi: 163)],
             dockConnector: .thirtyPin,
+            wifiVersion: "802.11b/g",
             bluetoothVersion: "2.1 + EDR (requires iPhone OS 3.0 or later)"
         ),
         .init(
@@ -30,6 +32,7 @@ extension Device {
             modelNumbers: ["A1318"],
             displays: [.init(role: .primary, diagonal: 3.5, resolution: .init(width: 320, height: 480), ppi: 163)],
             dockConnector: .thirtyPin,
+            wifiVersion: "802.11b/g",
             bluetoothVersion: "2.1 + EDR",
             batteryCapacity: .init(milliampHours: 789, wattHours: 2.92)
         ),
@@ -42,6 +45,7 @@ extension Device {
             modelNumbers: ["A1367"],
             displays: [.init(role: .primary, diagonal: 3.5, resolution: .init(width: 640, height: 960), ppi: 326)],
             dockConnector: .thirtyPin,
+            wifiVersion: "Wi-Fi 4 (802.11n)",
             bluetoothVersion: "2.1 + EDR",
             batteryCapacity: .init(milliampHours: 930, wattHours: 3.44)
         ),
@@ -54,6 +58,7 @@ extension Device {
             modelNumbers: ["A1421", "A1509"],
             displays: [.init(role: .primary, diagonal: 4.0, resolution: .init(width: 640, height: 1136), ppi: 326)],
             dockConnector: .lightning,
+            wifiVersion: "Wi-Fi 4 (802.11n)",
             voltage: "3.7 V",
             waterResistance: "None",
             waterResistanceDescription: "None",
@@ -69,6 +74,7 @@ extension Device {
             modelNumbers: ["A1574"],
             displays: [.init(role: .primary, diagonal: 4.0, resolution: .init(width: 640, height: 1136), ppi: 326)],
             dockConnector: .lightning,
+            wifiVersion: "Wi-Fi 5 (802.11ac)",
             voltage: "3.83 V",
             waterResistance: "None",
             waterResistanceDescription: "None",
@@ -84,6 +90,7 @@ extension Device {
             modelNumbers: ["A2178"],
             displays: [.init(role: .primary, diagonal: 4.0, resolution: .init(width: 640, height: 1136), ppi: 326)],
             dockConnector: .lightning,
+            wifiVersion: "Wi-Fi 5 (802.11ac)",
             voltage: "3.83 V",
             waterResistance: "None",
             waterResistanceDescription: "None",

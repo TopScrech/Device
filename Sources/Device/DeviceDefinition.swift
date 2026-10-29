@@ -19,6 +19,8 @@ public struct DeviceDefinition: Hashable, Sendable {
     public let capabilityOverrides: [String: Set<Capability>]
     /// Bluetooth specification version from the model catalogue, not a live connection
     public let bluetoothVersion: String?
+    /// Maximum advertised Wi-Fi generation and IEEE standard, not a live connection
+    public let wifiVersion: String?
     public let cpu: CPU?
     /// Neural Engine cores by nominal storage capacity in GB
     public let neuralEngineCoresByStorage: [Int: Int]
@@ -43,6 +45,7 @@ public struct DeviceDefinition: Hashable, Sendable {
         capabilityOverrides: [String: Set<Capability>] = [:],
         displays: [DeviceDisplay]? = nil,
         dockConnector: DockConnector,
+        wifiVersion: String? = nil,
         voltage: String? = nil,
         waterResistance: String? = nil,
         waterResistanceDescription: String? = nil,
@@ -73,6 +76,7 @@ public struct DeviceDefinition: Hashable, Sendable {
         self.displays = displays
         self.dockConnector = dockConnector
         self.bluetoothVersion = bluetoothVersion
+        self.wifiVersion = wifiVersion
     }
 
     /// Resolves a known A-model, or returns a shared capacity when no variant is needed

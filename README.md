@@ -13,6 +13,7 @@ let phone = Device(identifier: "iPhone16,1")
 let capabilities = phone.capabilities
 let connector = phone.dockConnector // .usbC
 let bluetoothVersion = phone.bluetoothVersion // "5.3"
+let wifiVersion = phone.wifiVersion // "Wi-Fi 6E (802.11ax)"
 let name = phone.name // "iPhone 15 Pro"
 ```
 
@@ -42,6 +43,12 @@ Browse definitions using `Device.iPhones`, `Device.iPads`, `Device.iPods`, `Devi
 
 Bluetooth values were migrated from Device Specs' custom mapping, with iPhone Duo set to `"6.0"` — missing mappings return `nil`
 
+`wifiVersion` returns the model's maximum advertised Wi-Fi generation and IEEE standard, such as `"Wi-Fi 6 (802.11ax)"` or `"Wi-Fi 6E (802.11ax)"`, on both `Device` and `DeviceDefinition`
+
+All 151 catalogued models have a Wi-Fi mapping — unknown devices and definitions without a mapping return `nil`
+Legacy b/g devices use `"802.11b/g"`
+The value describes catalogue support, without reporting live connection speeds, negotiated standards or regional band availability
+See the [Wi-Fi specification record](Documentation/connectivity/WiFi.md) for model values and sources
 
 Capabilities include `.magSafe`, `.wirelessCharging`, `.fiveG` and `.dynamicIsland`
 

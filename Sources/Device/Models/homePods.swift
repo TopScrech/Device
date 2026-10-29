@@ -9,6 +9,7 @@ extension Device {
             modelNumbers: ["A1639"],
             displays: [],
             dockConnector: .none,
+            wifiVersion: "Wi-Fi 5 (802.11ac)",
             waterResistance: "None",
             waterResistanceDescription: "None",
             bluetoothVersion: "5.0"
@@ -22,6 +23,7 @@ extension Device {
             modelNumbers: ["A2374", "A2531"],
             displays: [],
             dockConnector: .none,
+            wifiVersion: "Wi-Fi 4 (802.11n)",
             waterResistance: "None",
             waterResistanceDescription: "None",
             bluetoothVersion: "5.0"
@@ -35,6 +37,7 @@ extension Device {
             modelNumbers: ["A2825", "A2878"],
             displays: [],
             dockConnector: .none,
+            wifiVersion: "Wi-Fi 4 (802.11n)",
             waterResistance: "None",
             waterResistanceDescription: "None",
             bluetoothVersion: "5.0"
